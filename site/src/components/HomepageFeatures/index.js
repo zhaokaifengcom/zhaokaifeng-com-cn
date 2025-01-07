@@ -4,32 +4,29 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: '生动',
+    Svg: require('@site/static/img/Imagination.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        「荒原之梦考研数学」坚持用直观生动的方式解析生涩的知识点和题目，让同学们快乐学习，快速提分。
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: '专注',
+    Svg: require('@site/static/img/focus.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        荒原之梦专注于考研数学领域，数年如一日，不断深耕，只求甚解，用实力赢取学子们的信任。
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: '卓越',
+    Svg: require('@site/static/img/excellence.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        「荒原之梦考研数学」中的每一篇文章、每一节课、每一份习题，都力求精益求精，用坚实的质量做好的教育。
       </>
     ),
   },

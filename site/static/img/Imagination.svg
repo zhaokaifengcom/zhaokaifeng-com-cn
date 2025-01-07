@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   enable-background="new 0 0 578.917 434.188"
+   version="1.1"
+   viewBox="0 0 578.917 434.188"
+   id="svg36"
+   sodipodi:docname="Imagination.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs36" />
+  <sodipodi:namedview
+     id="namedview36"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.2035153"
+     inkscape:cx="248.02343"
+     inkscape:cy="226.42005"
+     inkscape:window-width="1920"
+     inkscape:window-height="974"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g36" />
+  <switch
+     id="switch36">
+    <foreignObject
+       width="1"
+       height="1"
+       requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/" />
+    <g
+       id="g36">
+      <linearGradient
+         id="e"
+         x1="292.69"
+         x2="286.37"
+         y1="12.292"
+         y2="412.62"
+         gradientUnits="userSpaceOnUse">
+        <stop
+           stop-color="#CECECF"
+           offset="0"
+           id="stop1" />
+        <stop
+           stop-color="#CBCBCC"
+           offset=".0603"
+           id="stop2" />
+        <stop
+           stop-color="#C0C0C1"
+           offset=".2627"
+           id="stop3" />
+        <stop
+           stop-color="#B3B3B4"
+           offset=".4619"
+           id="stop4" />
+        <stop
+           stop-color="#A8A8A8"
+           offset=".6544"
+           id="stop5" />
+        <stop
+           stop-color="#A0A09F"
+           offset=".8372"
+           id="stop6" />
+        <stop
+           stop-color="#9D9D9C"
+           offset="1"
+           id="stop7" />
+      </linearGradient>
+      <rect
+         width="578.92"
+         height="434.19"
+         fill="url(#e)"
+         id="rect7"
+         style="fill:none" />
+      <linearGradient
+         id="f"
+         x1="302.93"
+         x2="311"
+         y1="371.55"
+         y2="183.79"
+         gradientUnits="userSpaceOnUse">
+        <stop
+           stop-color="#5AC0CF"
+           offset="0"
+           id="stop8" />
+        <stop
+           stop-color="#4EABB9"
+           offset=".0437"
+           id="stop9" />
+        <stop
+           stop-color="#347A87"
+           offset=".1706"
+           id="stop10" />
+        <stop
+           stop-color="#245561"
+           offset=".3012"
+           id="stop11" />
+        <stop
+           stop-color="#193B46"
+           offset=".4333"
+           id="stop12" />
+        <stop
+           stop-color="#122934"
+           offset=".5675"
+           id="stop13" />
+        <stop
+           stop-color="#0C1E28"
+           offset=".7045"
+           id="stop14" />
+        <stop
+           stop-color="#091720"
+           offset=".8463"
+           id="stop15" />
+        <stop
+           stop-color="#08151E"
+           offset="1"
+           id="stop16" />
+      </linearGradient>
+      <linearGradient
+         id="g"
+         x1="469.48"
+         x2="96.483"
+         y1="331.25"
+         y2="69.44"
+         gradientUnits="userSpaceOnUse">
+        <stop
+           stop-color="#5AC0CF"
+           offset="0"
+           id="stop17" />
+        <stop
+           stop-color="#54B6C5"
+           offset=".0149"
+           id="stop18" />
+        <stop
+           stop-color="#3A8794"
+           offset=".1015"
+           id="stop19" />
+        <stop
+           stop-color="#2A616E"
+           offset=".194"
+           id="stop20" />
+        <stop
+           stop-color="#1E4651"
+           offset=".2913"
+           id="stop21" />
+        <stop
+           stop-color="#16333E"
+           offset=".3947"
+           id="stop22" />
+        <stop
+           stop-color="#10252F"
+           offset=".5063"
+           id="stop23" />
+        <stop
+           stop-color="#0B1C25"
+           offset=".6304"
+           id="stop24" />
+        <stop
+           stop-color="#091720"
+           offset=".7765"
+           id="stop25" />
+        <stop
+           stop-color="#08151E"
+           offset="1"
+           id="stop26" />
+      </linearGradient>
+      <linearGradient
+         id="h"
+         x1="91.21"
+         x2="328.48"
+         y1="156.38"
+         y2="290.09"
+         gradientUnits="userSpaceOnUse">
+        <stop
+           stop-color="#5AC0CF"
+           offset="0"
+           id="stop27" />
+        <stop
+           stop-color="#58BECC"
+           offset=".3583"
+           id="stop28" />
+        <stop
+           stop-color="#54B6C4"
+           offset=".5017"
+           id="stop29" />
+        <stop
+           stop-color="#4CA8B6"
+           offset=".6066"
+           id="stop30" />
+        <stop
+           stop-color="#4296A3"
+           offset=".6928"
+           id="stop31" />
+        <stop
+           stop-color="#367F8C"
+           offset=".7675"
+           id="stop32" />
+        <stop
+           stop-color="#2B6571"
+           offset=".8342"
+           id="stop33" />
+        <stop
+           stop-color="#1F4955"
+           offset=".895"
+           id="stop34" />
+        <stop
+           stop-color="#142F3A"
+           offset=".9494"
+           id="stop35" />
+        <stop
+           stop-color="#08151E"
+           offset="1"
+           id="stop36" />
+      </linearGradient>
+      <g
+         id="g1"
+         transform="matrix(1.3848215,0,0,1.3848215,-111.39194,-83.540741)">
+        <polygon
+           points="137.34,373.86 260.56,160.43 289.46,210.48 224.03,323.81 470.48,323.81 441.58,373.86 "
+           fill="url(#f)"
+           id="polygon16"
+           style="fill:url(#f)" />
+        <polygon
+           points="470.48,323.81 224.03,323.81 252.92,273.76 383.79,273.76 260.56,60.326 318.36,60.326 "
+           fill="url(#g)"
+           id="polygon26"
+           style="fill:url(#g)" />
+        <polygon
+           points="260.56,60.326 383.79,273.76 325.99,273.76 260.56,160.43 137.34,373.86 108.44,323.81 "
+           fill="url(#h)"
+           id="polygon36"
+           style="fill:url(#h)" />
+      </g>
+    </g>
+  </switch>
+</svg>

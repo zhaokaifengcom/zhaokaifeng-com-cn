@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '荒原之梦',
-  tagline: '专业',
+  title: '荒原之梦最新动态',
+  tagline: '这里是荒原之梦一步步成长的轨迹，从无到有，从弱到强。',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -46,7 +46,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+           'https://zhaokaifeng.com.cn',
         },
         blog: {
           showReadingTime: true,
@@ -76,22 +76,22 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: '荒原之梦最新动态',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'ZhaoKaifeng\' LOG',
+          src: 'img/logo.png',
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: '归档',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+          {to: '/blog', label: '资讯', position: 'left'},
+	 {
+            href: 'https://zhaokaifeng.com/',
+            label: '考研数学',
             position: 'right',
           },
         ],
@@ -100,46 +100,26 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: '官网：ZhaoKaifeng.com',
             items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
+/*              {
+                label: 'ZhaoKaifeng.com',
+                to: 'https://zhaokaifeng.com/',
+              }, */
             ],
           },
           {
-            title: 'Community',
+            title: '联系方式：hyzmky@163.com',
             items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
             ],
           },
           {
-            title: 'More',
+            title: '工作时间：周一至周五 08:00-18:00',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} ZhaoKaifeng.com.cn, All rights reserved.`,
       },
       prism: {
         theme: prismThemes.github,

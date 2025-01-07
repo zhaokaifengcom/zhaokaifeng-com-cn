@@ -30,5 +30,9 @@ Happy building awesome websites!
 第一次推送代码时的初始化命令：
 
 ```
+git init
+git remote add origin https://github.com/zhaokaifengcom/zhaokaifeng-com-cn.git
+git commit -m "Initial commit"
+git push -u origin main
 ```
 
