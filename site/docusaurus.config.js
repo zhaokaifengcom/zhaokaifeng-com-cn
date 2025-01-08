@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '荒原之梦最新动态',
-  tagline: '这里是荒原之梦一步步成长的轨迹，从无到有，从弱到强。',
+  title: '荒原之梦考研数学 Lite 版',
+  tagline: '轻快学习，快速进步！',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -36,8 +36,10 @@ const config = {
     locales: ['en'],
   },
 
+
   presets: [
     [
+
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
@@ -45,27 +47,15 @@ const config = {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-           'https://zhaokaifeng.com.cn',
-        },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+          //editUrl:
+           //'https://zhaokaifeng.com.cn',
+        //},
+
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
+
       }),
     ],
   ],
@@ -76,22 +66,22 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: '荒原之梦最新动态',
+        title: '',
         logo: {
           alt: 'ZhaoKaifeng\' LOG',
-          src: 'img/logo.png',
+          src: 'img/logo.svg',
         },
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'gdsx',
             position: 'left',
-            label: '归档',
+            label: '高等数学',
           },
-          {to: '/blog', label: '资讯', position: 'left'},
+
 	 {
             href: 'https://zhaokaifeng.com/',
-            label: '考研数学',
+            label: '考研数学 Ultra 版',
             position: 'right',
           },
         ],
@@ -127,5 +117,8 @@ const config = {
       },
     }),
 };
+
+
+
 
 export default config;
