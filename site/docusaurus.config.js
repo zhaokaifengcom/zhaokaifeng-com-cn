@@ -78,6 +78,13 @@ const config = {
             position: 'left',
             label: '高等数学',
           },
+		  
+		  {
+            type: 'docSidebar',
+            sidebarId: 'xxds',
+            position: 'left',
+            label: '线性代数',
+          },
 
 	 {
             href: 'https://zhaokaifeng.com/',
