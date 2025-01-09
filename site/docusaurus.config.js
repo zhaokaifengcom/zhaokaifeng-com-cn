@@ -22,8 +22,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  //organizationName: 'facebook', // Usually your GitHub org/user name.
+  //projectName: 'docusaurus', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -49,7 +49,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
           //editUrl:
            //'https://zhaokaifeng.com.cn',
-        //},
+        },
 
         blog: false,
         theme: {
@@ -68,7 +68,7 @@ const config = {
       navbar: {
         title: '',
         logo: {
-          alt: 'ZhaoKaifeng\' LOG',
+          alt: '荒原之梦考研数学 Lite 版',
           src: 'img/logo.svg',
         },
         items: [

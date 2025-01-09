@@ -21,13 +21,19 @@ const sidebars = {
   // But you can create a sidebar manually
   
   gdsx: [
-    'intro',
-    'hello',
+    'gdsx/intro',
     {
       type: 'category',
-      label: '高等数学',
-      items: ['tutorial-basics/create-a-document'],
+      label: '课程 | 第一章',
+      items: ['gdsx/Chapter_1/01', 'gdsx/Chapter_1/02'],
     },
+	
+	{
+      type: 'category',
+      label: '课程 | 第二章',
+      items: ['gdsx/Chapter_2/02', 'gdsx/Chapter_2/02'],
+    },
+	
   ],
    
 };

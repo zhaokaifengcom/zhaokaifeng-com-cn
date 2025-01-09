@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
-# Create a Document
+# 高等数学第一章（Lite Edition）
 
 Documents are **groups of pages** connected through:
 
