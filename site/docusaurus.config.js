@@ -140,6 +140,28 @@ const config = {
             position: 'left',
             label: '线性代数',
           },
+		  
+		  {
+            type: 'docSidebar',
+            sidebarId: 'gltj',
+            position: 'left',
+            label: '概率统计',
+          },
+		  
+		  
+		  {
+            type: 'docSidebar',
+            sidebarId: 'sxzt',
+            position: 'left',
+            label: '数学真题',
+          },
+		  
+		  {
+            type: 'docSidebar',
+            sidebarId: 'ultranews',
+            position: 'left',
+            label: 'Ultra News',
+          },
 
           {
             href: 'https://zhaokaifeng.com/',
@@ -152,7 +174,7 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: '官网：ZhaoKaifeng.com',
+            title: '考研数学 Ultra 版：ZhaoKaifeng.com',
             items: [
               /*              {
                 label: 'ZhaoKaifeng.com',
