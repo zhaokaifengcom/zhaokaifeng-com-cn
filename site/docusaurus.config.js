@@ -6,6 +6,9 @@
 
 import { themes as prismThemes } from 'prism-react-renderer';
 
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
+
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
@@ -47,6 +50,11 @@ const config = {
           // Remove this to remove the "edit this page" links.
           //editUrl:
           //'https://zhaokaifeng.com.cn',
+		  
+		  path: 'docs',
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
+		  
         },
 
         blog: false,
@@ -58,13 +66,25 @@ const config = {
     ],
   ],
 
-  // 添加scripts配置项用于全局脚本注入
+
+  stylesheets: [
+    {
+      href: 'https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/KaTeX/0.15.2/katex.min.css',
+      type: 'text/css',
+      crossorigin: 'anonymous',
+    },
+  ],
+
+
+  // 添加scripts配置项用于全局脚本注入  
   scripts: [
     {
       src: "https://zhaokaifeng.com.cn/js/baidu.js",
       async: true,
       defer: false
     },
+	
+	/*
     {
       src: "https://cdn.staticfile.net/KaTeX/0.16.9/katex.min.css",
       async: false,
@@ -85,11 +105,19 @@ const config = {
       async: true,
       defer: false
     }
+	*/
+	
   ],
+
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+		
+		math: {
+      // 开启 KaTeX 支持
+      mathEnabled: true,
+    },
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
