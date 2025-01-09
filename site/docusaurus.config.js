@@ -4,7 +4,7 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -36,10 +36,8 @@ const config = {
     locales: ['en'],
   },
 
-
   presets: [
     [
-
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
@@ -48,7 +46,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           //editUrl:
-           //'https://zhaokaifeng.com.cn',
+          //'https://zhaokaifeng.com.cn',
         },
 
         blog: false,
@@ -58,6 +56,35 @@ const config = {
 
       }),
     ],
+  ],
+
+  // 添加scripts配置项用于全局脚本注入
+  scripts: [
+    {
+      src: "https://zhaokaifeng.com.cn/js/baidu.js",
+      async: true,
+      defer: false
+    },
+    {
+      src: "https://cdn.staticfile.net/KaTeX/0.16.9/katex.min.css",
+      async: false,
+      defer: false
+    },
+    {
+      src: "https://cdn.staticfile.net/KaTeX/0.16.9/katex.min.js",
+      async: true,
+      defer: false
+    },
+    {
+      src: "https://cdn.staticfile.net/KaTeX/0.16.9/contrib/auto-render.min.js",
+      async: true,
+      defer: false
+    },
+    {
+      src: "https://zhaokaifeng.com.cn/js/katex-modify.js",
+      async: true,
+      defer: false
+    }
   ],
 
   themeConfig:
@@ -78,15 +105,15 @@ const config = {
             position: 'left',
             label: '高等数学',
           },
-		  
-		  {
+
+          {
             type: 'docSidebar',
             sidebarId: 'xxds',
             position: 'left',
             label: '线性代数',
           },
 
-	 {
+          {
             href: 'https://zhaokaifeng.com/',
             label: '考研数学 Ultra 版',
             position: 'right',
@@ -99,7 +126,7 @@ const config = {
           {
             title: '官网：ZhaoKaifeng.com',
             items: [
-/*              {
+              /*              {
                 label: 'ZhaoKaifeng.com',
                 to: 'https://zhaokaifeng.com/',
               }, */
@@ -124,8 +151,5 @@ const config = {
       },
     }),
 };
-
-
-
 
 export default config;
