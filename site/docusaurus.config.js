@@ -180,22 +180,50 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: '考研数学 Ultra 版：ZhaoKaifeng.com',
+            title: 'Ultra Edition',
             items: [
-              /*              {
-                label: 'ZhaoKaifeng.com',
+            {
+                label: '官方网站',
                 to: 'https://zhaokaifeng.com/',
-              }, */
+            },
+			
+			{
+				label: '思维导图',
+				to: 'https://zhaokaifeng.com/project-portfolio/mind-maps-for-mathematical-reasoning-in-postgraduate-entrance-examination/',
+			},			
+			
             ],
           },
           {
-            title: '联系方式：hyzmky@163.com',
+            title: '联系方式',
             items: [
+			
+			{
+				label: '微信：zhaokaifeng24',
+				to: 'http://pic.yupoo.com/dhgimg/6b20360b/ef1d8362.png',
+			},
+			
+			{
+				label: '邮箱：hyzmky@163.com',
+				to: 'mailto:hyzmky@163.com',
+			},
+			
             ],
           },
           {
-            title: '工作时间：周一至周五 08:00-18:00',
+            title: '关于',
             items: [
+			
+			{
+				label: 'About',
+				to: '/about',
+			},
+			
+			{
+				label: 'SiteMap',
+				to: '/sitemap.xml',
+			},
+			
             ],
           },
         ],
