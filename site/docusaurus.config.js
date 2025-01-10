@@ -221,7 +221,7 @@ const config = {
 			
 			{
 				label: 'SiteMap',
-				to: '/sitemap.xml',
+				to: 'https://zhaokaifeng.com.cn/sitemap.xml',
 			},
 			
             ],
