@@ -20,7 +20,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/about">
-             关于「荒原之梦考研数学」
+             📢关于「荒原之梦考研数学」
           </Link>
         </div>
       </div>

@@ -131,21 +131,21 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'gdsx',
             position: 'left',
-            label: '高等数学',
+            label: '🎓高等数学',
           },
 
           {
             type: 'docSidebar',
             sidebarId: 'xxds',
             position: 'left',
-            label: '线性代数',
+            label: '🎓线性代数',
           },
 		  
 		  {
             type: 'docSidebar',
             sidebarId: 'gltj',
             position: 'left',
-            label: '概率统计',
+            label: '🎓概率统计',
           },
 		  
 		  
@@ -153,14 +153,20 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'sxzt',
             position: 'left',
-            label: '数学真题',
+            label: '📜️数学真题',
           },
 		  
 		  {
             type: 'docSidebar',
             sidebarId: 'ultranews',
             position: 'left',
-            label: 'Ultra News',
+            label: '🔥Ultra News',
+          },
+		  
+		  {
+            href: '/vip',
+            label: '🏅VIP',
+            position: 'right',
           },
 
           {
