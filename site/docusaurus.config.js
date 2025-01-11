@@ -168,6 +168,12 @@ const config = {
             label: '🏅VIP',
             position: 'right',
           },
+		  
+		  {
+            href: 'https://paper.zhaokaifeng.net/',
+            label: '🗞演算纸',
+            position: 'right',
+          },
 
           {
             href: 'https://zhaokaifeng.com/',
