@@ -23,14 +23,20 @@ const sidebars = {
     'gdsx/intro',
     {
       type: 'category',
-      label: '课程 | 第一章',
+      label: '课程|第一章：函数、极限和连续',
       items: ['gdsx/Chapter_1/01', 'gdsx/Chapter_1/02'],
     },
 	
 	{
       type: 'category',
-      label: '课程 | 第二章',
+      label: '课程|第二章',
       items: ['gdsx/Chapter_2/01', 'gdsx/Chapter_2/02'],
+    },
+	
+	{
+      type: 'category',
+      label: '习题|第一章：函数、极限和连续',
+      items: ['gdsx/Exercise_1/01', 'gdsx/Exercise_1/02', 'gdsx/Exercise_1/03', 'gdsx/Exercise_1/04'],
     },
 	
   ],
