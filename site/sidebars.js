@@ -24,13 +24,19 @@ const sidebars = {
     {
       type: 'category',
       label: '课程|第一章：函数、极限和连续',
-      items: ['gdsx/Chapter_1/01', 'gdsx/Chapter_1/02'],
+      items: ['gdsx/Chapter_1/1.1', 'gdsx/Chapter_1/1.2', 'gdsx/Chapter_1/1.3'],
     },
 	
 	{
       type: 'category',
-      label: '课程|第二章',
-      items: ['gdsx/Chapter_2/01', 'gdsx/Chapter_2/02'],
+      label: '课程|第二章：一元函数微分学',
+      items: ['gdsx/Chapter_2/2.1', 'gdsx/Chapter_2/2.2', 'gdsx/Chapter_2/2.3'],
+    },
+	
+	{
+      type: 'category',
+      label: '课程|第三章：一元函数积分学',
+      items: ['gdsx/Chapter_3/01', 'gdsx/Chapter_3/02'],
     },
 	
 	{
