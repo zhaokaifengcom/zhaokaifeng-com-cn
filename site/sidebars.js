@@ -23,7 +23,7 @@ const sidebars = {
     'gdsx/intro',
     {
       type: 'category',
-      label: '课程|第一章：函数、极限和连续',
+      label: '课程|第一章：函数&极限&连续',
       items: ['gdsx/Chapter_1/1.1', 'gdsx/Chapter_1/1.2', 'gdsx/Chapter_1/1.3'],
     },
 	
@@ -36,13 +36,55 @@ const sidebars = {
 	{
       type: 'category',
       label: '课程|第三章：一元函数积分学',
-      items: ['gdsx/Chapter_3/01', 'gdsx/Chapter_3/02'],
+      items: ['gdsx/Chapter_3/3.1', 'gdsx/Chapter_3/3.2', 'gdsx/Chapter_3/3.3'],
+    },
+	
+	{
+      type: 'category',
+      label: '课程|第四章：多元函数积分学',
+      items: ['gdsx/Chapter_4/4.1', 'gdsx/Chapter_4/4.2', 'gdsx/Chapter_4/4.3', 'gdsx/Chapter_4/4.4', 'gdsx/Chapter_4/4.5'],
+    },
+	
+	{
+      type: 'category',
+      label: '课程|第五章：二重积分',
+      items: ['gdsx/Chapter_5/5.1', 'gdsx/Chapter_5/5.2'],
+    },
+	
+	{
+      type: 'category',
+      label: '课程|第六章：常微分&差分方程',
+      items: ['gdsx/Chapter_6/6.1', 'gdsx/Chapter_6/6.2'],
+    },
+	
+	{
+      type: 'category',
+      label: '课程|第七章：无穷级数',
+      items: ['gdsx/Chapter_7/7.1', 'gdsx/Chapter_7/7.2', 'gdsx/Chapter_7/7.3'],
+    },
+	
+	{
+      type: 'category',
+      label: '课程|第八章：向量代数&空间解析几何',
+      items: ['gdsx/Chapter_8/8.1', 'gdsx/Chapter_8/8.2'],
+    },
+	
+	{
+      type: 'category',
+      label: '课程|第九章：三重积分',
+      items: ['gdsx/Chapter_9/9.1'],
+    },
+	
+	{
+      type: 'category',
+      label: '课程|第十章：曲线&曲面积分',
+      items: ['gdsx/Chapter_10/10.1', 'gdsx/Chapter_10/10.2', 'gdsx/Chapter_10/10.3'],
     },
 	
 	{
       type: 'category',
       label: '习题|第一章：函数、极限和连续',
-      items: ['gdsx/Exercise_1/01', 'gdsx/Exercise_1/02', 'gdsx/Exercise_1/03', 'gdsx/Exercise_1/04'],
+      items: ['gdsx/Exercise_1/1.1', 'gdsx/Exercise_1/1.2', 'gdsx/Exercise_1/1.3', 'gdsx/Exercise_1/1.4'],
     },
 	
   ],
