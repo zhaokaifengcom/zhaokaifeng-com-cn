@@ -55,13 +55,6 @@ const config = {
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
 		  
-		  markdown: {
-            mdx1Compat: {
-              admonitions: true,
-            },
-            format: 'mdx',
-          },
-		  
         },
 
         blog: false,
