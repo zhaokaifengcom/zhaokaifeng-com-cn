@@ -87,6 +87,12 @@ const sidebars = {
       items: ['gdsx/Exercise_1/1.1', 'gdsx/Exercise_1/1.2', 'gdsx/Exercise_1/1.3', 'gdsx/Exercise_1/1.4'],
     },
 	
+	{
+      type: 'category',
+      label: '习题|第二章：一元函数微分学',
+      items: ['gdsx/Exercise_2/2.1', 'gdsx/Exercise_2/2.2', 'gdsx/Exercise_2/2.3'],
+    },
+	
   ],
   
   
