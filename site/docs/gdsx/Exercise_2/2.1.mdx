@@ -45,4 +45,221 @@ $\begin{aligned} f ^ { \prime } ( 0 ) = & \lim _ { x \rightarrow 0 } \frac { f (
 
 ---
 
+## 002
+
+**题目**
+
+下列函数中，在 $x = 0$ 处不可导的是哪个？
+
+(A) $f ( x ) = | x | \sin | x |$.
+
+(B) $f ( x ) = | x | \sin \sqrt { | x | }$.
+
+(C) $f ( x ) = \cos | x |$.
+
+(D) $f ( x ) = \cos \sqrt { | x | }$.
+
+**知识点**
+
+- 一点处导数的存在性
+
+**答案**
+
+(D)
+
+**解析**
+
+选项(A): 
+
+$\begin{aligned} & f ^ { \prime } ( 0 ) = \lim _ { x \rightarrow 0 } \frac { f ( x ) - f ( 0 ) } { x } \\
+= & \lim _ { x \rightarrow 0 } \frac { | x | \sin | x | } { x } \\
+= & \lim _ { x \rightarrow 0 } \frac { | x | ^ { 2 } } { x } \\
+= & \lim _ { x \rightarrow 0 } x \\
+= & 0 \end{aligned}$
+
+所以，函数在 $x = 0$ 处可导，（A）选项错误。
+
+选项(B): 
+
+$\begin{aligned} & f ^ { \prime } ( 0 ) \\
+= & \lim _ { x \rightarrow 0 } \frac { f ( x ) - f ( 0 ) } { x } \\
+= & \lim _ { x \rightarrow 0 } \frac { | x | \sin \sqrt { | x | } } { x } \\
+= & \lim _ { x \rightarrow 0 } \frac { | x | ^ { \frac { 3 } { 2 } } } { x } \\
+= & 0 \end{aligned}$
+
+所以，函数在 $x = 0$ 处可导，（B）选项错误。
+
+选项(C): 
+
+$\begin{aligned} & f ^ { \prime } ( 0 ) = \lim _ { x \rightarrow 0 } \frac { f ( x ) - f ( 0 ) } { x } \\
+= & \lim _ { x \rightarrow 0 } \frac { \cos | x | - 1 } { x } \\
+= & \lim _ { x \rightarrow 0 } \frac { - \frac { 1 } { 2 } | x | ^ { 2 } } { x } \\
+= & - \frac { 1 } { 2 } \lim _ { x \rightarrow 0 } x \\
+= & 0 \end{aligned}$
+故函数在 $x = 0$ 处可导，（C）选项错误。
+
+选项(D): 
+
+$\begin{aligned} & f ^ { \prime } ( 0 ) \\
+= & \lim _ { x \rightarrow 0 } \frac { f ( x ) - f ( 0 ) } { x } \\
+= & \lim _ { x \rightarrow 0 } \frac { \cos \sqrt { | x | } - 1 } { x } \\
+= & \lim _ { x \rightarrow 0 } \frac { - \frac { 1 } { 2 } ( \sqrt { | x | } ) ^ { 2 } } { x } \\
+= & - \frac { 1 } { 2 } \lim _ { x \rightarrow 0 } \frac { | x | } { x } \end{aligned}$
+
+极限不存在，（D）选项正确。
+
+---
+
+## 003
+
+**题目**
+
+设函数 $f ( x )$ 在 $x = 0$ 连续，则下列命题错误的是()
+
+(A)若 $\lim _ { x \rightarrow 0 } \frac { f ( x ) } { x }$ 存在，则 $f ( 0 ) = 0$.
+
+(B)若 $\lim _ { x \rightarrow 0 } \frac { f ( x ) + f ( - x ) } { x }$ 存在，则 $f ( 0 ) = 0$.
+
+(C)若 $\lim _ { x \rightarrow 0 } \frac { f ( x ) } { x }$ 存在，则 $f ^ { \prime } ( 0 )$ 存在.
+
+(D)若 $\lim _ { x \rightarrow 0 } \frac { f ( x ) - f ( - x ) } { x }$ 存在，则 $f ^ { \prime } ( 0 )$ 存在.
+
+**知识点**
+
+- 一点处导数的定义
+- 函数极限的存在性
+
+**答案**
+
+(D)
+
+
+**解析**
+
+(A) 选项：因 $\lim _ { x \rightarrow 0 } \frac { f ( x ) } { x }$ 存在，且 $f ( x )$ 在 $x = 0$ 处连续，所以：
+ $f ( 0 ) = \lim _ { x \rightarrow 0 } f ( x ) = \lim _ { x \rightarrow 0 } \frac { f ( x ) } { x } \cdot x = 0 ,$ (A) 选项正确. 
+
+(B) 选项：因 $\lim _ { x \rightarrow 0 } \frac { f ( x ) + f ( - x ) } { x }$ 存在，且 $f ( x )$ 在 $x = 0$ 处连续，所以：
+ $\lim _ { x \rightarrow 0 } [ f ( x ) + f ( - x ) ] = 2 f ( 0 ) = \lim _ { x \rightarrow 0 } \frac { f ( x ) + f ( - x ) } { x } x = 0 \Rightarrow f ( 0 ) = 0 $, (B) 选项正确. 
+
+(C) 选项：由(A)选项知 $f ( 0 ) = 0 $, 从而 $\lim _ { x \rightarrow 0 } \frac { f ( x ) } { x } = \lim _ { x \rightarrow 0 } \frac { f ( x ) - f ( 0 ) } { x } = f ^ { \prime } ( 0 )$ 存在，(C) 选项正确. 
+
+(D)选项：由于 $\lim _ { x \rightarrow 0 } \frac { f ( x ) - f ( - x ) } { x } = \lim _ { x \rightarrow 0 } \left[ \frac { f ( x ) - f ( 0 ) } { x } - \frac { f ( - x ) - f ( 0 ) } { x } \right]$ 存在，只能说明极限 $\lim _ { x \rightarrow 0 } \frac { f ( x ) - f ( 0 ) } { x }$ 和 $\lim _ { x \rightarrow 0 } \frac { f ( - x ) - f ( 0 ) } { x }$ 同时存在或同时不存在，即 $f ^ { \prime } ( 0 )$ 可能存在也可能不存在，例如取 $f ( x ) = | x | $, 则 $\lim _ { x \rightarrow 0 } \frac { f ( x ) - f ( - x ) } { x } = 0$ 存在，但 $f ^ { \prime } ( 0 )$ 则不存在. 所以应选 (D).
+
+---
+
+## 004
+
+**题目**
+
+已知函数 $f ( x )$ 在 $x = 0$ 处可导，且 $f ( 0 ) = 0$, 则 $\lim _ { x \rightarrow 0 } \frac { x ^ { 2 } f ( x ) - 2 f \left( x ^ { 3 } \right) } { x ^ { 3 } } =$ ( )
+
+(A) $- 2 f ^ { \prime } ( 0 )$.
+(B) $- f ^ { \prime } ( 0 )$.
+(C) $f ^ { \prime } ( 0 )$.
+(D)0.
+
+**知识点**
+
+- 一点处导数的定义
+
+**答案**
+
+(B)
+
+**解析**
+
+解法一：特例法
+
+令 $f ( x ) = x $, 则 $f ( x )$ 在 $x = 0$ 处可导，且 $f ^ { \prime } ( 0 ) = 1 $, 但是：
+$\lim _ { x \rightarrow 0 } \frac { x ^ { 2 } f ( x ) - 2 f \left( x ^ { 3 } \right) } { x ^ { 3 } } = \lim _ { x \rightarrow 0 } \frac { x ^ { 3 } - 2 x ^ { 3 } } { x ^ { 3 } } = - 1$
+
+于是可排除 (A)(C)(D). 所以应选 (B).
+
+解法二：一点处导数的定义
+
+$\lim _ { x \rightarrow 0 } \frac { x ^ { 2 } f ( x ) - 2 f \left( x ^ { 3 } \right) } { x ^ { 3 } } = \lim _ { x \rightarrow 0 } \frac { f ( x ) } { x } - 2 \lim _ { x \rightarrow 0 } \frac { f \left( x ^ { 3 } \right) } { x ^ { 3 } }$
+
+$= \lim _ { x \rightarrow 0 } \frac { f ( x ) - f ( 0 ) } { x } - 2 \lim _ { x \rightarrow 0 } \frac { f \left( x ^ { 3 } \right) - f ( 0 ) } { x ^ { 3 } }$
+
+$= f ^ { \prime } ( 0 ) - 2 f ^ { \prime } ( 0 ) = - f ^ { \prime } ( 0 )$
+
+所以应选(B).
+
+---
+
+## 005
+
+**题目**
+
+设函数 $f ( x )$ 在区间 $( - 1 , 1 )$ $\lim _ { x \rightarrow 0 } f ( x ) = 0 ,$ 内有定义，则()
+
+(A)当 $\lim _ { x \rightarrow 0 } \frac { f ( x ) } { \sqrt { | x | } } = 0$ 时， $f ( x )$ 在 $x = 0$ 处可导.
+
+(B)当 $\lim _ { x \rightarrow 0 } \frac { f ( x ) } { x ^ { 2 } } = 0$ 时， $f ( x )$ 在 $x = 0$ 处可导.
+
+(C)当 $f ( x )$ 在 $x = 0$ 处可导时，$\lim _ { x \rightarrow 0 } \frac { f ( x ) } { \sqrt { | x | } } = 0$.
+
+(D)当 $f ( x )$ 在 $x = 0$ 处可导时， $\lim _ { x \rightarrow 0 } \frac { f ( x ) } { x ^ { 2 } } = 0$.
+
+**知识点**
+
+- 一点处导数的定义
+
+**答案**
+
+(C)
+
+**解析**
+
+令 $f ( x ) = \left\{ \begin{array} { l l } x ^ { 3 } , & x \neq 0 , \\ 1 , & x = 0 , \end{array} \right.$ 则 $\lim _ { x \rightarrow 0 } f ( x ) = 0 , \lim _ { x \rightarrow 0 } \frac { f ( x ) } { \sqrt { | x | } } = 0 , \lim _ { x \rightarrow 0 } \frac { f ( x ) } { x ^ { 2 } } = 0$, 但 $f ( x )$ 在 $x = 0$ 处不连续，因此不可导，所以排除 (A) 和 (B); 
+
+令 $f ( x ) = x | x | $, 则 $\lim _ { x \rightarrow 0 } f ( x ) = 0$, 且 $f ( x )$ 在 $x = 0$ 处可导，但 $\lim _ { x \rightarrow 0 } \frac { f ( x ) } { x ^ { 2 } } = \lim _ { x \rightarrow 0 }$ $\frac { x | x | } { x ^ { 2 } } = \lim _ { x \rightarrow 0 } \frac { | x | } { x }$ 不存在，故排除(D), 应选(C). 
+
+对于选项 (C) 正确性的证明：当 $f ( x )$ 在 $x = 0$ 处可导时， $f ( x )$ 在 $x = 0$ 处连续，所以：
+ $f ( 0 ) = \lim _ { x \rightarrow 0 } f ( x ) = 0$, 且 $f ^ { \prime } ( 0 )$ 存在，不妨设
+$f ^ { \prime } ( 0 ) = \lim _ { x \rightarrow 0 } \frac { f ( x ) - f ( 0 ) } { x } = \lim _ { x \rightarrow 0 } \frac { f ( x ) } { x } = A$,
+
+于是 $\lim _ { x \rightarrow 0 } \frac { f ( x ) } { \sqrt { | x | } } = \lim _ { x \rightarrow 0 } \frac { f ( x ) } { x } \cdot \frac { x } { \sqrt { | x | } } =A \cdot 0 = 0$, (C) 选项正确。
+
+---
+
+## 006
+
+**题目**
+
+设函数 $f ( x )$ 在 $x = 0$ 处连续，且 $\lim _ { h \rightarrow 0 } \frac { f \left( h ^ { 2 } \right) } { h ^ { 2 } } = 1 ,$ 则 ()
+
+(A) $f ( 0 ) = 0$ 且 $f _ { - } ^ { \prime } ( 0 )$ 存在
+
+(B) $f ( 0 ) = 1$ 且 $f _ { - } ^ { \prime } ( 0 )$ 存在
+
+(C) $f ( 0 ) = 0$ 且 $f _ { + } ^ { \prime } ( 0 )$ 存在
+
+(D) $f ( 0 ) = 1$ 且 $f _ { + } ^ { \prime } ( 0 )$ 存在
+
+**知识点**
+
+- 一点处导数的定义
+- 左导数和右导数
+
+**答案**
+
+(C)
+
+**解析**
+
+由于函数 $f ( x )$ 在 $x = 0$ 处连续，且 $\lim _ { h \rightarrow 0 } \frac { f \left( h ^ { 2 } \right) } { h ^ { 2 } } = 1$, 所以：
+
+$\begin{aligned} & f ( 0 ) \\
+= & \lim _ { h \rightarrow 0 } f \left( h ^ { 2 } \right) \\
+= & \lim _ { h \rightarrow 0 } \frac { f \left( h ^ { 2 } \right) } { h ^ { 2 } } \cdot h ^ { 2 } = 0 \\ \\
+& \lim _ { h \rightarrow 0 } \frac { f \left( h ^ { 2 } \right) } { h ^ { 2 } } \\
+= & \lim _ { h \rightarrow 0 } \frac { f \left( h ^ { 2 } \right) - f ( 0 ) } { h ^ { 2 } - 0 } \\
+= & f^{\prime} _ { + } ( 0 ) = 1 \end{aligned}$
+
+因此，应选 (C).
+
+---
+
 <span className={style1.ZHAOKAIFENGurl}>更高质量的考研数学精讲请访问「荒原之梦考研数学」 Ultra 版：www.zhaokaifeng.com</span>

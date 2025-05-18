@@ -93,6 +93,12 @@ const sidebars = {
       items: ['gdsx/Exercise_2/2.1', 'gdsx/Exercise_2/2.2', 'gdsx/Exercise_2/2.3'],
     },
 	
+	{
+      type: 'category',
+      label: '习题|第三章：一元函数积分学',
+      items: ['gdsx/Exercise_3/3.1', 'gdsx/Exercise_3/3.2', 'gdsx/Exercise_3/3.3'],
+    },
+	
   ],
   
   
