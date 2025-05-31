@@ -99,6 +99,12 @@ const sidebars = {
       items: ['gdsx/Exercise_3/3.1', 'gdsx/Exercise_3/3.2', 'gdsx/Exercise_3/3.3'],
     },
 	
+	{
+      type: 'category',
+      label: '习题|第四章：多元函数积分学',
+      items: ['gdsx/Exercise_4/4.1', 'gdsx/Exercise_4/4.2', 'gdsx/Exercise_4/4.3', 'gdsx/Exercise_4/4.4', 'gdsx/Exercise_4/4.5'],
+    },
+	
   ],
   
   
