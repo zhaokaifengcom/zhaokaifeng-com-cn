@@ -733,4 +733,319 @@ $$
 
 ---
 
+## 024
+
+**题目**
+
+已知函数 $f ( x )$ 连续，且 $\lim _ { x \rightarrow 0 } \frac { 1 - \cos [ x f ( x ) ] } { \left( \mathrm { e } ^ { x ^ { 2 } } - 1 \right) f ( x ) } = 1 ,$ $f ( 0 ) = ?$
+
+**知识点**
+
+- 等价无穷小
+- 函数的连续性
+
+**答案**
+
+$2$
+
+**解析**
+
+由于：
+
+$$
+\begin{aligned}
+1 = & \lim _ { x \rightarrow 0 } \frac { 1 - \cos [ x f ( x ) ] } { \left( \mathrm { e } ^ { x ^ { 2 } } - 1 \right) f ( x ) } \\ \\
+= & \lim _ { x \rightarrow 0 } \frac { \frac { 1 } { 2 } x ^ { 2 } f ^ { 2 } ( x ) } { x ^ { 2 } f ( x ) } \\ \\
+= & \frac { 1 } { 2 } \lim _ { x \rightarrow 0 } f ( x ) \\ \\
+\to & \lim _ { x \rightarrow 0 } f ( x ) = 2
+\end{aligned}
+$$
+
+又因为函数 $f ( x )$ 连续，所以：
+
+$$
+\lim _ { x \rightarrow 0 } f ( x ) = f ( 0 ) = 2
+$$
+
+---
+
+## 025
+
+**题目**
+
+设函数 $f ( x ) = \left\{ \begin{array} { l l } x ^ { 2 } + 1 , & | x | \leqslant c , \\ \frac { 2 } { | x | } , & | x | > c \end{array} \right.$ 在 $( - \infty , + \infty )$ 内连续，则 $c = ?$
+
+**知识点**
+
+- 函数的连续性
+
+**答案**
+
+$1$
+
+**解析**
+
+由于 $f ( x )$ 在 $( - \infty , + \infty )$ 内连续，所以 $f ( x )$ 在 $x = c$ 处连续，即：
+
+$$
+\lim _ { x \rightarrow c^{+} } f ( x ) = \lim _ { x \rightarrow c^{-} } f ( x ) = f ( c )
+$$
+
+于是：
+
+$$
+\begin{aligned}
+& \lim _ { x \rightarrow c^+ } \frac { 2 } { x } = \lim _ { x \rightarrow c^-} \left( x ^ { 2 } + 1 \right) \\ \\
+\to & \frac { 2 } { c } = c ^ { 2 } + 1
+\end{aligned}
+$$
+
+又因为 $c > 0$, 所以 $c = 1$.
+
+---
+
+<span className={style1.ZHAOKAIFENGurl}>更高质量的考研数学精讲请访问「荒原之梦考研数学」 Ultra 版：www.zhaokaifeng.com</span>
+
+---
+
+## 026
+
+**题目**
+
+设 $f ( x ) = \lim _ { n \rightarrow \infty } \frac { ( n - 1 ) x } { n x ^ { 2 } + 1 }$, 则 $f ( x )$ 的间断点为 $x = ?$
+
+**知识点**
+
+- 函数的间断点
+
+**答案**
+
+$0$
+
+**解析**
+
+由于：
+
+$$
+f ( x ) = \lim _ { n \rightarrow \infty } \frac { ( n - 1 ) x } { n x ^ { 2 } + 1 } = \left\{ \begin{array} { l l } \frac { 1 } { x } , & x \neq 0 , \\ 0 , & x = 0 . \end{array} \right.
+$$
+
+又因为 $\lim _ { x \rightarrow 0 } f ( x ) = \lim _ { x \rightarrow 0 } \frac { 1 } { x } = \infty$, 所以 $x = 0$ 为 $f ( x )$ 的无穷间断点.
+
+---
+
+## 027
+
+**题目**
+
+设函数 $f ( x ) = \left\{ \begin{array} { l l } \frac { 1 - \mathrm { e } ^ { \tan x } } { \arcsin \frac { x } { 2 } } , & x > 0 , \\ a \mathrm { e } ^ { 2 x } , & x \leqslant 0 \end{array} \right.$ 在 $x = 0$ 处连续，则 $a = ?$
+
+**知识点**
+
+- 函数在一点处的连续性
+
+**答案**
+
+$-2$
+
+**解析**
+
+由 $f ( x )$ 在 $x = 0$ 处连续，可知：
+
+$$
+\lim _ { x \rightarrow 0^+ } f ( x ) = \lim _ { x \rightarrow 0^- } f ( x ) = f ( 0 )
+$$
+
+又因为：
+
+$$
+\begin{aligned}
+& \lim _ { x \rightarrow 0^+ } f ( x ) \\ \\
+= & \lim _ { x \rightarrow 0^+ } \frac { 1 - \mathrm { e } ^ { \tan x } } { \arcsin \frac { x } { 2 } } = \lim _ { x \rightarrow 0^+ } \frac { - \tan x } { \frac { x } { 2 } } \\ \\
+= & \lim _ { x \rightarrow 0^+ } \frac { - x } { \frac { x } { 2 } } = - 2
+\end{aligned}
+$$
+
+且 $f ( 0^- ) = a \times 1 = a$
+
+所以 $a = - 2$.
+
+---
+
+## 028
+
+**题目**
+
+已知 $f ( x ) = \left\{ \begin{array} { l l } ( \cos x ) ^ { x ^ { -2 } } , & x \neq 0 , \\ a , & x = 0 \end{array} \right.$ 在 $x = 0$ 处连续，则 $a = ?$
+
+**知识点**
+
+- 分段函数的连续性
+
+**答案**
+
+$\mathrm { e } ^ { - \frac { 1 } { 2 } }$
+
+**解析**
+
+已知 $f ( x )$ 在 $x = 0$ 处连续，则：
+
+$$
+\begin{aligned}
+a = & f ( 0 ) = \lim _ { x \rightarrow 0 } f ( x ) = \lim _ { x \rightarrow 0 } ( \cos x ) ^ { x^{-2} } \\ \\
+= & \mathrm { e } ^ { \lim _ { x \rightarrow 0 } x ^ { -2 } \ln \cos x } = \mathrm { e } ^ { \lim _ { x \rightarrow 0 } x ^ { -2 } ( \cos x - 1 ) } \\ \\
+= & \mathrm { e } ^ { \lim _ { x \rightarrow 0 } - \frac { 1 } { 2 } x ^ { 2 } \cdot x ^ { - 2 } } = \mathrm { e } ^ { - \frac { 1 } { 2 } } \end{aligned}
+$$
+
+---
+
+## 029
+
+**题目**
+
+若 $f(x) = \begin{cases} \frac{\sin 2x + e^{2ax} - 1}{x}, & x \neq 0, \\ a, & x = 0 \end{cases} \text{ 在 } (-\infty, +\infty) \text{ 上连续，则 } a = \underline{\hspace{0.5cm}}.$
+
+**知识点**
+
+- 分段函数的连续性
+
+**答案**
+
+$-2$
+
+**解析**
+
+由于 $f(x)$ 在 $x=0$ 处连续，所以：
+
+$$
+\begin{aligned}
+a = & \lim_{x \to 0} f(x)=\lim_{x \to 0} \frac{\sin 2x + e^{2ax} - 1}{x} \\ \\
+= &  \lim_{x \to 0} \frac{\sin 2x}{x} + \lim_{x \to 0} \frac{e^{2ax} - 1}{x} \\ \\
+= & 2 + \lim_{x \to 0} \frac{2ax}{x} \\ \\
+= & 2 + 2a = a \\ \\
+\to & a = -2
+\end{aligned}
+$$
+
+---
+
+## 030
+
+**题目**
+
+设函数 $f(x)$ 有连续的导数, $f(0)=0$, $f'(0)=b$, 若函数 $F(x)=\begin{cases} \frac{f(x)+a\sin x}{x}, & x \neq 0, \\ A, & x=0 \end{cases} \text{ 在 } x=0$ 处连续, 则常数 $A = ?$
+
+**知识点**
+
+- 分段函数的连续性
+- 未知量的求解
+
+**答案**
+
+$a+b$
+
+**解析**
+
+由于 $F(x)$ 在 $x = 0$ 处连续，所以：
+
+$$
+\begin{aligned}
+& F(0)=\lim_{x \to 0}F(x) \\ \\
+\to & A = \lim_{x \to 0}\frac{f(x)+a\sin x}{x}=\lim_{x \to 0}\frac{f(x)}{x}+\lim_{x \to 0}\frac{a\sin x}{x} \\ \\
+\to & A = \lim_{x \to 0}\frac{f(x)-f(0)}{x}+a=f^{\prime}(0)+a=a + b
+\end{aligned}
+$$
+
+---
+
+<span className={style1.ZHAOKAIFENGurl}>更高质量的考研数学精讲请访问「荒原之梦考研数学」 Ultra 版：www.zhaokaifeng.com</span>
+
+---
+
+## 031
+
+**题目**
+
+设 $f(x) = \begin{cases} a + bx^2, & x \leq 0, \\ \frac{\sin bx}{x}, & x > 0 \end{cases}$ 在 $x = 0$ 处连续，则常数 $a$ 与 $b$ 应满足的关系是 $\_\_\_\_\_.$
+
+**知识点**
+
+- 分段函数的连续性
+- 未知量的求解
+
+**答案**
+
+$a=b$
+
+**解析**
+
+由 $f(x)$ 在 $x = 0$ 处连续，故 $\lim_{x \to 0} f(x) = f(0)$，即 $\lim_{x \to 0} \frac{\sin bx}{x} = a$，得 $a = b$.
+
+---
+
+## 032
+
+**题目**
+
+设 $f(x) = \begin{cases} 2x + a, & x \leq 0, \\ e^x (\sin x + \cos x), & x > 0 \end{cases}$ 在 $(-\infty, +\infty)$ 内连续，则 $a =$
+
+**知识点**
+
+- 分段函数的连续性
+
+**答案**
+
+$1$
+
+**解析**
+
+因 $f(x)$ 在 $(-\infty, +\infty)$ 内连续，所以 $\lim_{x \to 0^+} f(x) = f(0)$，即：
+
+$$
+\begin{aligned}
+& \lim_{x \to 0^+} e^x (\sin x + \cos x) = a \\ \\
+\to & a = 1
+\end{aligned}
+$$
+
+---
+
+## 033
+
+**题目**
+
+已知 $f(x)=e^{x^2}$, $f[\varphi(x)]=1-x$, 且 $\varphi(x)\geqslant0$, 求 $\varphi(x)$ 并写出它的定义域.
+
+**知识点**
+
+- 复合函数的定义域
+
+**答案**
+
+$(-\infty, 0]$
+
+**解析**
+
+因为 $f(x)=e^{x^2}$, 故 $f[\varphi(x)]=e^{\varphi(x)^2}$. 又因为：
+
+$$
+f[\varphi(x)]=1-x
+$$
+
+所以：
+
+$$
+\begin{aligned}
+& e^{\varphi(x)^2}=1-x \\ \\
+\to & \varphi^2(x)=\ln(1-x) \\ \\
+\to & \varphi(x)=\sqrt{\ln(1-x)}, \varphi(x) \geqslant 0
+\end{aligned}
+$$
+
+接着，由 $1-x>0$ 且 $\ln(1-x)\geqslant0$ 可知, $x<1$ 且 $1-x\geqslant1$, 即 $x\leqslant0$.
+
+因此，$\varphi(x)$ 的定义域为 $(-\infty, 0]$.
+
+---
+
 <span className={style1.ZHAOKAIFENGurl}>更高质量的考研数学精讲请访问「荒原之梦考研数学」 Ultra 版：www.zhaokaifeng.com</span>
