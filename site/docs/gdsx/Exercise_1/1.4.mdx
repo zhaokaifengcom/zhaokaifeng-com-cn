@@ -1921,4 +1921,232 @@ $$
 
 ---
 
+## 075
+
+**题目**
+
+$\lim_{x\to0}\frac{(1-\cos x)[x-\ln(1+\tan x)]}{\sin^4 x} = ?$
+
+**知识点**
+
+- 等价无穷小
+
+**答案**
+
+$\frac{1}{4}$
+
+**解析**
+
+$$
+\begin{aligned}
+& \lim_{x\to0}\frac{(1-\cos x)[x-\ln(1+\tan x)]}{\sin^4 x} \\ \\
+= & \lim_{x\to0}\frac{\frac{1}{2}x^2[x-\ln(1+\tan x)]}{x^4} \\ \\
+= & \frac{1}{2}\lim_{x\to0}\frac{x-\ln(1+\tan x)}{x^2} \\ \\
+= & \frac{1}{2}\left(\lim_{x\to0}\frac{x-\tan x}{x^2}+\lim_{x\to0}\frac{\tan x-\ln(1+\tan x)}{x^2}\right) \\ \\
+= & \frac{1}{2}\left\{\lim_{x\to0}\frac{-\frac{1}{3}x^3}{x^2}+\lim_{x\to0}\frac{\frac{1}{2}\tan^2 x}{x^2}\right\} \\ \\
+= & \frac{1}{2}\times\left(0+\frac{1}{2}\right)=\frac{1}{4}
+\end{aligned}
+$$
+
+:::tip
+同类题目的深度解析，[请点击这里](https://zhaokaifeng.com/)
+:::
+
+---
+
+## 076
+
+**题目**
+
+$\lim_{x\to0}\frac{[\sin x-\sin(\sin x)]\sin x}{x^4} = ?$
+
+**知识点**
+
+- 等价无穷小
+
+**答案**
+
+$\frac{1}{6}$
+
+**解析**
+
+首先：
+
+$$
+\begin{aligned}
+& \lim_{x\to0}\frac{[\sin x-\sin(\sin x)]\sin x}{x^4} \\ \\
+= & \lim_{x\to0}\frac{[\sin x-\sin(\sin x)]\sin x}{\sin^4 x} \\ \\
+= & \lim_{x\to0}\frac{\sin x-\sin(\sin x)}{\sin^3 x}
+\end{aligned}
+$$
+
+接着，令 $\sin x = t$, 则：
+
+$$
+\begin{aligned}
+& \lim_{x\to0}\frac{\sin x-\sin(\sin x)}{\sin^3 x} \\ \\
+= & \lim_{x\to0}\frac{t-\sin t}{t^3}=\lim_{x\to0}\frac{\frac{1}{6}t^3}{t^3}=\frac{1}{6}
+\end{aligned}
+$$
+
+---
+
+## 077
+
+**题目**
+
+$\lim_{x\to0}\left(\frac{1+x}{1-e^{-x}}-\frac{1}{x}\right) = ?$
+
+**知识点**
+
+- 等价无穷小
+
+**答案**
+
+$\frac{3}{2}$
+
+**解析**
+
+:::tip
+同类题目的深度解析，[请点击这里](https://zhaokaifeng.com/)
+:::
+
+$$
+\begin{aligned}
+& \lim_{x\to0}\left(\frac{1+x}{1-e^{-x}}-\frac{1}{x}\right) \\ \\
+= & \lim_{x\to0}\frac{x(1+x)-(1-e^{-x})}{x(1-e^{-x})} \\ \\
+= & \lim_{x\to0}\frac{x+x^2-1+e^{-x}}{x^2} \\ \\
+= & \lim_{x\to0}\frac{1+2x-e^{-x}}{2x} \\ \\
+= & 1+\lim_{x\to0}\frac{1-e^{-x}}{2x} \\ \\
+= & 1+\lim_{x\to0}\frac{x}{2x}=\frac{3}{2}
+\end{aligned}
+$$
+
+---
+
+## 078
+
+**题目**
+
+$\lim_{x \to 0} \frac{1}{x^3} \left[ \left( \frac{2 + \cos x}{3} \right)^x - 1 \right] = ?$
+
+**知识点**
+
+- 等价无穷小
+
+**答案**
+
+$-\frac{1}{6}$
+
+**解析**
+
+$$
+\begin{aligned}
+& \lim_{x \to 0} \frac{1}{x^3} \left[ \left( \frac{2 + \cos x}{3} \right)^x - 1 \right] \\ \\
+= \ & \lim_{x \to 0} \frac{\mathrm{e}^{x \ln \frac{2 + \cos x}{3}} - 1}{x^3} \\ \\
+= \ & \lim_{x \to 0} \frac{x \ln \frac{2 + \cos x}{3}}{x^3} = \lim_{x \to 0} \frac{\ln \left( 1 + \frac{2 + \cos x}{3} - 1 \right)}{x^2} \\ \\
+= \ & \lim_{x \to 0} \frac{\frac{2 + \cos x}{3} - 1}{x^2} = \lim_{x \to 0} \frac{\cos x - 1}{3 x^2} \\ \\
+= \ & \lim_{x \to 0} \frac{-\frac{1}{2} x^2}{3 x^2} = -\frac{1}{6}
+\end{aligned}
+$$
+
+---
+
+## 079
+
+**题目**
+
+$\lim_{x\to0}\left(\frac{1}{\sin^{2}x}-\frac{\cos^{2}x}{x^{2}}\right) = ?$
+
+**知识点**
+
+- 等价无穷小
+
+**答案**
+
+$\frac{4}{3}$
+
+**解析**
+$$
+\begin{aligned}
+& \lim_{x\to0}\left(\frac{1}{\sin^{2}x}-\frac{\cos^{2}x}{x^{2}}\right) = \lim_{x\to0}\frac{x^{2}-\sin^{2}x\cos^{2}x}{x^{2}\sin^{2}x} \\ \\
+= \ & \lim_{x\to0}\frac{x^{2}-\left(\frac{1}{2}\sin2x\right)^{2}}{x^{4}}
+= \lim_{x\to0}\frac{\left(x+\frac{1}{2}\sin2x\right)\left(x-\frac{1}{2}\sin2x\right)}{x^{4}} \\ \\
+= \ & \lim_{x\to0}\frac{\left(x+\frac{1}{2}\sin2x\right)(2x-\sin2x)}{2x^{4}}
+= \lim_{x\to0}\frac{\frac{1}{6}(2x)^{3}\left(x+\frac{1}{2}\sin2x\right)}{2x^{4}} \\ \\
+= \ & \frac{2}{3}\lim_{x\to0}\frac{x+\frac{1}{2}\sin2x}{x} = \frac{2}{3}\left(\lim_{x\to0}\frac{x}{x}+\frac{1}{2}\lim_{x\to0}\frac{\sin2x}{x}\right) \\ \\
+= \ & \frac{2}{3}(1+1)=\frac{4}{3}
+\end{aligned}
+$$
+
+---
+
+## 080
+
+**题目**
+
+$\lim_{x \to 0} \left( \frac{2 + e^{\frac{1}{x}}}{1 + e^{\frac{4}{x}}} + \frac{\sin x}{|x|} \right) = ?$
+
+**知识点**
+
+- 等价无穷小
+
+**答案**
+
+$1$
+
+**解析**
+
+对于含有 $e^{\frac{1}{x}}$ 且 $x \rightarrow 0$ 的极限式子，我们需要对 $x \rightarrow 0^{-}$ 和 $x \rightarrow 0^{+}$ 分别讨论：
+
+$x \rightarrow 0^{-}$:
+
+$$
+\begin{aligned}
+& \lim_{x \to 0^-} \left( \frac{2 + e^{\frac{1}{x}}}{1 + e^{\frac{4}{x}}} + \frac{\sin x}{|x|} \right) = \lim_{x \to 0^-} \frac{2 + e^{\frac{1}{x}}}{1 + e^{\frac{4}{x}}} + \lim_{x \to 0^-} \frac{\sin x}{x} \\ \\
+= & \lim_{x \to 0^-} \frac{e^{\frac{1}{x}} \left( \frac{2}{e^{\frac{1}{x}}} + 1 \right)}{e^{\frac{4}{x}} \left( \frac{1}{e^{\frac{4}{x}}} + 1 \right)} + 1 = \lim_{x \to 0^-} \frac{1}{e^{\frac{3}{x}}} + 1 = 1
+\end{aligned}
+$$
+
+$x \rightarrow 0^{+}$:
+
+$$
+\begin{aligned}
+& \lim_{x \to 0^+} \left( \frac{2 + e^{\frac{1}{x}}}{1 + e^{\frac{4}{x}}} + \frac{\sin x}{|x|} \right) = \lim_{x \to 0^+} \frac{2 + e^{\frac{1}{x}}}{1 + e^{\frac{4}{x}}} - \lim_{x \to 0^+} \frac{\sin x}{x} \\ \\
+= & \frac{2}{1} - 1 = 1
+\end{aligned}
+$$
+
+综上可知：$\lim_{x \to 0} \left( \frac{2 + e^{\frac{1}{x}}}{1 + e^{\frac{4}{x}}} + \frac{\sin x}{|x|} \right) = 1$.
+
+---
+
+## 081
+
+**题目**
+
+$\lim_{x \to 0} \frac{\sqrt{1 + \tan x} - \sqrt{1 + \sin x}}{x \ln(1 + x) - x^2} = ?$
+
+**知识点**
+
+- 等价无穷小
+
+**答案**
+
+$- \frac{1}{2}$
+
+**解析**
+
+$$
+\begin{aligned}
+& \lim_{x \to 0} \frac{\sqrt{1 + \tan x} - \sqrt{1 + \sin x}}{x \ln(1 + x) - x^2} \\ \\
+= & \lim_{x \to 0} \frac{(\sqrt{1 + \tan x} - \sqrt{1 + \sin x})(\sqrt{1 + \tan x} + \sqrt{1 + \sin x})}{x [\ln(1 + x) - x] (\sqrt{1 + \tan x} + \sqrt{1 + \sin x})} \\ \\
+= & \lim_{x \to 0} \frac{\tan x - \sin x}{x \cdot \left(-\frac{1}{2} x^2\right) \cdot 2} \\ \\
+= & \lim_{x \to 0} \frac{\tan x (1 - \cos x)}{-x^3} \\ \\
+= & -\lim_{x \to 0} \frac{\frac{1}{2} x^3}{x^3} = -\frac{1}{2}
+\end{aligned}
+$$
+
+---
+
 <span className={style1.ZHAOKAIFENGurl}>更高质量的考研数学精讲请访问「荒原之梦考研数学」 Ultra 版：www.zhaokaifeng.com</span>
