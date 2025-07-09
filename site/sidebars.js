@@ -105,6 +105,42 @@ const sidebars = {
       items: ['gdsx/Exercise_4/4.1', 'gdsx/Exercise_4/4.2', 'gdsx/Exercise_4/4.3', 'gdsx/Exercise_4/4.4', 'gdsx/Exercise_4/4.5'],
     },
 	
+	{
+      type: 'category',
+      label: '习题✍第五章：二重积分',
+      items: ['gdsx/Exercise_5/5.1', 'gdsx/Exercise_5/5.2'],
+    },
+	
+	{
+      type: 'category',
+      label: '习题✍第六章：常微分&差分方程',
+      items: ['gdsx/Exercise_6/6.1', 'gdsx/Exercise_6/6.2'],
+    },
+	
+	{
+      type: 'category',
+      label: '习题✍第七章：无穷级数',
+      items: ['gdsx/Exercise_7/7.1', 'gdsx/Exercise_7/7.2', 'gdsx/Exercise_7/7.3'],
+    },
+	
+	{
+      type: 'category',
+      label: '习题✍第八章：向量代数&空间解析几何',
+      items: ['gdsx/Exercise_8/8.1', 'gdsx/Exercise_8/8.2'],
+    },
+	
+	{
+      type: 'category',
+      label: '习题✍第九章：三重积分',
+      items: ['gdsx/Exercise_9/9.1'],
+    },
+	
+	{
+      type: 'category',
+      label: '习题✍第十章：曲线和曲面积分',
+      items: ['gdsx/Exercise_10/10.1', 'gdsx/Exercise_10/10.2', 'gdsx/Exercise_10/10.3',],
+    },
+	
   ],
   
   

@@ -210,8 +210,8 @@ const config = {
 			},
 			
 			{
-				label: '邮箱：hyzmky@163.com',
-				to: 'mailto:hyzmky@163.com',
+				label: '邮箱：zhaokaifeng.com@gmail.com',
+				to: 'mailto:zhaokaifeng.com@gmail.com',
 			},
 			
             ],

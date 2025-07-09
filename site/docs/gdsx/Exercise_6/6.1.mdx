@@ -1,0 +1,1288 @@
+---
+sidebar_position: 1
+---
+
+import React from 'react';
+import style1 from '../../../src/css/zhaokaifeng.com.module.css';
+
+# §6.1 常微分方程
+
+<span className={style1.ZHAOKAIFENGurl}>更高质量的考研数学精讲请访问「荒原之梦考研数学」 Ultra 版：www.zhaokaifeng.com</span>
+
+---
+
+## 01
+
+**题目**
+
+设 $y=y(x)$ 是二阶常系数微分方程 $y''+py'+qy=e^{3x}$ 满足初始条件 $y(0)=y'(0)=0$ 的特解，则当 $x\to 0$，函数 $\frac{\ln(1+x^2)}{y(x)}$ 的极限 $(\quad)$
+
+$(A)$ 不存在. $\qquad (B)$ 等于 $1$. $\qquad (C)$ 等于 $2$. $\qquad (D)$ 等于 $3$.
+
+**知识点**
+
+- 二阶常系数微分方程
+- 极限
+
+**答案**
+
+(C)
+
+**解析**
+
+:::tip
+同类题目的深度解析，[请点击这里](https://zhaokaifeng.com/23073/)
+:::
+
+因为：
+
+$\lim_{x\to 0}\frac{\ln(1+x^2)}{y(x)}=\lim_{x\to 0}\frac{x^2}{y(x)}=\lim_{x\to 0}\frac{2x}{y'(x)}=\lim_{x\to 0}\frac{2}{y''(x)}$
+
+将 $y(0)=y'(0)=0$ 代入方程 $y''+py'+qy=e^{3x}$ 中，得 $y''(0)=1$, 又 $y''(x)$ 在 $x=0$ 处连续, 从而
+
+$\lim_{x\to 0}\frac{\ln(1+x^2)}{y(x)}=\lim_{x\to 0}\frac{2}{y''(x)}=\frac{2}{y''(0)}=2.$
+
+故应选(C).
+
+---
+
+## 02
+
+**题目**
+
+设 $y_1, y_2$ 是一阶线性非齐次微分方程 $y'+p(x)y=q(x)$ 的两个特解，若常数 $\lambda, \mu$ 使 $\lambda y_1 + \mu y_2$ 是该方程的解，$\lambda y_1 - \mu y_2$ 是对应的齐次方程的解，则 $(\quad)$
+
+$(A)$ $\lambda=\frac{1}{2}, \mu=\frac{1}{2}.$ $\qquad (B)$ $\lambda=-\frac{1}{2}, \mu=-\frac{1}{2}.$
+
+$(C)$ $\lambda=\frac{2}{3}, \mu=\frac{1}{3}.$ $\qquad (D)$ $\lambda=\frac{2}{3}, \mu=\frac{2}{3}.$
+
+**知识点**
+
+- 一阶线性非齐次微分方程
+
+**答案**
+
+(A)
+
+**解析**
+
+由于 $y_1,y_2$ 是方程 $y'+p(x)y = q(x)$ 的解，所以：
+
+$$
+y_1'+p(x)y_1 = q(x),\ y_2'+p(x)y_2 = q(x)
+$$
+
+若 $\lambda y_1 + \mu y_2$ 是 $y'+p(x)y = q(x)$ 的解，则：
+
+$$
+\begin{aligned}
+& (\lambda y_1 + \mu y_2)'+p(x)(\lambda y_1 + \mu y_2) = q(x) \\ \\
+\Rightarrow \ & \lambda[y_1'+p(x)y_1] + \mu[y_2'+p(x)y_2] = q(x) \\ \\
+\Rightarrow \ & (\lambda + \mu)q(x) = q(x)
+\end{aligned}
+$$
+
+因 $y'+p(x)y = q(x)$ 是非齐次一阶线性微分方程，所以 $q(x) \neq 0$，从而 $\lambda + \mu = 1$. 若 $\lambda y_1 - \mu y_2$ 是 $y'+P(x)y = 0$ 解，则 $(\lambda y_1 - \mu y_2)'+p(x)(\lambda y_1 - \mu y_2) = 0$, 即：
+
+$\lambda[y_1'+p(x)y_1] - \mu[y_2'+p(x)y_2] = 0$，也即 $(\lambda - \mu)q(x) = 0$.
+
+从而 $\lambda - \mu = 0$，联立 $\begin{cases} \lambda + \mu = 1,\\ \lambda - \mu = 0, \end{cases}$ 解得 $\begin{cases} \lambda = \dfrac{1}{2},\\ \mu = \dfrac{1}{2}, \end{cases}$ 故应选(A).
+
+---
+
+## 03
+
+**题目**
+
+设非齐次线性微分方程 $y'+P(x)y=Q(x)$ 有两个不同的解 $y_1(x), y_2(x)$，$C$ 为任意常数，则该方程的通解是（　　）
+
+(A) $C[y_1(x)-y_2(x)]$		(B) $y_1(x)+C[y_1(x)-y_2(x)]$
+
+(C) $C[y_1(x)+y_2(x)]$		(D) $y_1(x)+C[y_1(x)+y_2(x)]$
+
+**知识点**
+
+- 一阶线性非齐次微分方程
+
+**答案**
+
+(B)
+
+**解析**
+
+因 $y_1(x), y_2(x)$ 是 $y'+P(x)y=Q(x)$ 的两个不同的解，故 $y_1(x)-y_2(x)$ 是齐次方程 $y'+P(x)y=0$ 的一个非零解。从而由线性方程解的结构知 $C[y_1(x)-y_2(x)]$ 是齐次方程 $y'+P(x)y=0$ 的通解。故 $y_1(x)+C[y_1(x)-y_2(x)]$ 为 $y'+P(x)y=Q(x)$ 的通解。故应选 (B)。
+
+---
+
+## 04
+
+**题目**
+
+若 $y=(1+x^2)^2 - \sqrt{1+x^2},\ y=(1+x^2)^2 + \sqrt{1+x^2}$ 是微分方程 $y' + p(x)y = q(x)$ 的两个解, 则 $q(x)=?$
+
+(A) $3x(1+x^2)$	(B) $-3x(1+x^2)$	(C) $\frac{x}{1+x^2}$		   (D) $-\frac{x}{1+x^2}$
+
+**知识点**
+
+- 一阶线性非齐次微分方程
+
+**答案**
+
+(A)
+
+**解析**
+
+由线性方程解的结构知:
+
+$\left[(1 + x^2)^2 + \sqrt{1 + x^2}\right] - \left[(1 + x^2)^2 - \sqrt{1 + x^2}\right] = 2\sqrt{1 + x^2}$ 为 $y' + p(x)y = 0$的解
+
+所以 $y = \sqrt{1 + x^2}$ 也是 $y' + p(x)y = 0$ 的解
+
+于是：$(\sqrt{1 + x^2})' + p(x)(\sqrt{1 + x^2}) = 0$，解得：
+
+$p(x) = -\frac{1}{\sqrt{1 + x^2}} \cdot \frac{2x}{2\sqrt{1 + x^2}} = -\frac{x}{1 + x^2}$
+
+因 $y = \sqrt{1 + x^2}$ 是 $y' + p(x)y = 0$ 的解，$y = (1 + x^2)^2 - \sqrt{1 + x^2}$ 是 $y' + p(x)y = q(x)$ 的解
+
+所以 $(1 + x^2)^2$ 是 $y' + p(x)y = q(x)$ 的解，即：
+
+$\left[(1 + x^2)^2\right]' - \frac{x}{1 + x^2} \cdot (1 + x^2)^2 = q(x)$
+
+求得$q(x) = 2(1 + x^2) \cdot 2x - x(1 + x^2) = 3x(1 + x^2)$。
+
+综上可知，本题应选 (A).
+
+---
+
+## 05
+
+**题目**
+
+(数一) 设曲线积分 $\int_{L} [f(x) - e^{x}] \sin y dx - f(x) \cos y dy$ 与路径无关，其中 $f(x)$ 具有一阶连续导数，且 $f(0) = 0$，则 $f(x)$ 等于（  ）
+
+(A) $\frac{e^{-x} - e^{x}}{2}$	(B) $\frac{e^{x} - e^{-x}}{2}$	(C) $\frac{e^{x} + e^{-x}}{2} - 1$	 (D) $1 - \frac{e^{x} + e^{-x}}{2}$
+
+**知识点**
+
+- 一阶线性微分方程
+- 曲线积分
+
+**答案**
+
+(B)
+
+**解析**
+
+由曲线积分与路径无关，得 $\frac { \partial } { \partial y } \left\{ \left[ f ( x ) - \mathrm { e } ^ { x } \right] \sin y \right\} = \frac { \partial } { \partial x } [ - f ( x ) \cos y ]$，即 $\left[ f ( x ) - \mathrm { e } ^ { x } \right] \cos y = - f ^ { \prime } ( x ) \cos y$, 化简得 $f ^ { \prime } ( x ) + f ( x ) = \mathrm { e } ^ { x }$, 等式两边同乘 $\mathrm { e } ^ { x }$, 得：$\mathrm { e } ^ { x } f ^ { \prime } ( x ) + \mathrm { e } ^ { x } f ( x ) = \mathrm { e } ^ { 2 x }$,  即 $\left[ \mathrm { e } ^ { x } f ( x ) \right] ^ { \prime } = \mathrm { e } ^ { 2 x }$, 所以 $\mathrm { e } ^ { x } f ( x ) = \frac { 1 } { 2 } \mathrm { e } ^ { 2 x } + C $. 
+由 $f ( 0 ) = 0 $, 解得 $C = - \frac { 1 } { 2 } $, 因此
+$f ( x ) = \frac { 1 } { 2 } \left( \mathrm { e } ^ { x } - \mathrm { e } ^ { - x } \right)$ 故应选 (B). 
+
+注：求 $f ^ { \prime } ( x ) + f ( x ) = \mathrm { e } ^ { x }$ 也可用一阶线性微分方程公式 $f ( x ) =$ $$\mathrm { e } ^ { - \int \mathrm { d } x } \left( \int \mathrm { e } ^ { x } \cdot \mathrm { e } ^ { \int \mathrm { d } x } \mathrm { ~ d } x + C \right) .$$ 
+
+---
+
+<span className={style1.ZHAOKAIFENGurl}>更高质量的考研数学精讲请访问「荒原之梦考研数学」 Ultra 版：www.zhaokaifeng.com</span>
+
+---
+
+## 06
+
+**题目**
+
+已知函数 $y = y ( x )$ 在任意点 $x$ 处的增量 $\Delta y = \frac { y \Delta x } { 1 + x ^ { 2 } } + \alpha $, 且当 $\Delta x \rightarrow 0$ 时 ， $\alpha$ 是 $\Delta x$ 的高阶无穷小， $y ( 0 ) = \pi $, 则 $y ( 1 )$ 等于
+
+(A) $2 \pi $.	(B) $\pi$.	(C) $\mathrm { e } ^ { \frac { \pi } { 4 } }$.	(D) $\pi \mathrm { e } ^ { \frac { \pi } { 4 } } $. 
+
+**知识点**
+
+- 可微的定义
+
+**答案**
+
+(D)
+
+**解析**
+
+由可微的定义，知 $y ^ { \prime } = \frac { y } { 1 + x ^ { 2 } } $, 从而 $y \neq 0$ 时， $\frac { \mathrm { d } y } { y } = \frac { 1 } { 1 + x ^ { 2 } } \mathrm { ~ d } x $, 两边积分，得 $\ln | y | = \arctan x + C _ { 1 } $, 从而 $| y | = \mathrm { e } ^ { \arctan x \cdot c _ { 1 } } $, 即 $y = \pm \mathrm { e } ^ { c _ { 1 } } \cdot \mathrm { e } ^ { \arctan x } $, 令 $C = \pm \mathrm { e } ^ { c _ { 1 } } $, 则 $y = C \mathrm { e } ^ { \arctan x } $. 
+
+又 $y ( 0 ) = \pi $, 故 $\pi = C \cdot \mathrm { e } ^ { 0 } $, 得 $C = \pi $, 从而 $y = \pi \cdot \mathrm { e } ^ { \arctan x } . $ 则 $y ( 1 ) = \pi \cdot \mathrm { e } ^ { \arctan 1 } = \pi \mathrm { e } ^ { \frac { \pi } { 4 } } $. 故应选(D). 
+
+---
+
+## 07
+
+**题目**
+
+函数 $y = C _ { 1 } \mathrm { e } ^ { x } + C _ { 2 } \mathrm { e } ^ { - 2 x } + x \mathrm { e } ^ { x }$ 满足的一个微分方程是（  ）
+
+(A) $y ^ { \prime \prime } - y ^ { \prime } - 2 y = 3 x \mathrm { e } ^ { x } $.	(B) $y ^ { \prime \prime } - y ^ { \prime } - 2 y = 3 \mathrm { e } ^ { x } $. 
+(C) $y ^ { \prime \prime } + y ^ { \prime } - 2 y = 3 x \mathrm { e } ^ { x } $.	(D) $y ^ { \prime \prime } + y ^ { \prime } - 2 y = 3 \mathrm { e } ^ { x } $. 
+
+**知识点**
+
+- 二阶常系数微分方程
+
+**答案**
+
+(D)
+
+**解析**
+
+由微分方程的通解 $y = C _ { 1 } \mathrm { e } ^ { x } + C _ { 2 } \mathrm { e } ^ { - 2 x } + x \mathrm { e } ^ { x }$ 知， $\mathrm { e } ^ { x } , \mathrm { e } ^ { - 2 x }$ 是齐次方程的2 个无关的解， $x \mathrm { e } ^ { x }$ 为非齐次方程的解.故 $r _ { 1 } = 1 , r _ { 2 } = - 2$ 是特征方程的两个根，故特征方程为 $( r - 1 ) ( r + 2 ) = 0 $, 即 $r ^ { 2 } + r - 2 = 0 $, 从而齐次方程为 $y ^ { \prime \prime } + y ^ { \prime } - 2 y = 0 $. 设非齐次方程为 $y ^ { \prime \prime } + y ^ { \prime } - 2 y = f ( x ) $, 因 $x \mathrm { e } ^ { x }$ 为非齐次方程的解，于是：
+
+ $\left( x \mathrm { e } ^ { x } \right) ^ { \prime \prime } + \left( x \mathrm { e } ^ { x } \right) ^ { \prime } - 2 x \mathrm { e } ^ { x } = f ( x ) ,$ 即 $( x + 2 ) \mathrm { e } ^ { x } + ( x + 1 ) \mathrm { e } ^ { x } - 2 x \mathrm { e } ^ { x } = f ( x ) $, 
+从而 $f ( x ) = 3 \mathrm { e } ^ { x } $, 则所求微分方程为 $y ^ { \prime \prime } + y ^ { \prime } - 2 y = 3 \mathrm { e } ^ { x } $. 
+
+综上可知，本题应选 (D). 
+
+---
+
+## 08
+
+**题目**
+
+微分方程 $y ^ { \prime \prime } + y = x ^ { 2 } + 1 + \sin x$ 的特解形式可设为
+(A) $y ^ { * } = a x ^ { 2 } + b x + c + x ( A \sin x + B \cos x ) $. 
+(B) $y ^ { * } = x \left( a x ^ { 2 } + b x + c + A \sin x + B \cos x \right) .$ 
+(C) $y ^ { * } = a x ^ { 2 } + b x + c + A \sin x $. 
+(D) $y ^ { * } = a x ^ { 2 } + b x + c + A \cos x $. 
+
+**知识点**
+
+- 二阶常系数微分方程
+
+**答案**
+
+(A)
+
+**解析**
+
+因齐次方程 $y ^ { \prime \prime } + y = 0$ 所对应的特征方程为 $r ^ { 2 } + 1 = 0 $, 故 $r _ { 1 , 2 } = \pm i $, 从而 $y ^ { \prime \prime } + y = x ^ { 2 } + 1$ 的特解可设为 $y _ { i } ^ { * } = a x ^ { 2 } + b x + c , y ^ { \prime \prime } + y = \sin x$ 的特解可设为 $y _ { 2 } ^ { * } = x ( A \sin x + B \cos x ) $. 由解的叠加原理知， $y ^ { \prime \prime } + y = x ^ { 2 } + 1 + \sin x$ 的特解形式可设为 $y _ { 1 }^{*} + y _ { 2 }^{*} = a x ^ { 2 } + b x + c + x ( A \sin x + B \cos x ) $. 故应选(A) 
+
+---
+
+## 09
+
+**题目**
+
+微分方程 $y ^ { \prime \prime } - \lambda ^ { 2 } y = \mathrm { e } ^ { \lambda x } + \mathrm { e } ^ { - \lambda x } ( \lambda > 0 )$ 的特解形式为
+(A) $a \left( \mathrm { e } ^ { \lambda x } + \mathrm { e } ^ { - \lambda x } \right) .$		(B) $a x \left( \mathrm { e } ^ { \lambda x } + \mathrm { e } ^ { - \lambda x } \right) .$ 
+(C) $x \left( a \mathrm { e } ^ { \lambda x } + b \mathrm { e } ^ { - \lambda x } \right) .$	   (D) $x ^ { 2 } \left( a \mathrm { e } ^ { \lambda x } + b \mathrm { e } ^ { - \lambda x } \right) .$ 
+
+**知识点**
+
+- 二阶常系数微分方程
+
+**答案**
+
+(C)
+
+**解析**
+
+$y ^ { \prime \prime } - \lambda ^ { 2 } y = 0$ 的特征：方程为 $r ^ { 2 } - \lambda ^ { 2 } = 0 $, 解得特征根为 $r _ { 1 . 2 } = \pm \lambda $. 故 $y ^ { \prime \prime } - \lambda ^ { 2 } y = \mathrm { e } ^ { \lambda x }$ 的特解可设为 $y _ { i } ^ { * } = a x \mathrm { e } ^ { \lambda x } $, $y ^ { \prime \prime } - \lambda ^ { 2 } y = \mathrm { e } ^ { - \lambda x }$ 的特解可设为 $y _ { 2 } ^ { * } = b x \mathrm { e } ^ { - \lambda x }$, 
+
+根据解的叠加原理可知， $y ^ { \prime \prime } - \lambda ^ { 2 } y = \mathrm { e } ^ { \lambda x } + \mathrm { e } ^ { - \lambda x }$ 的特解可设为：
+
+$$y _ { i } ^ { * } + y _ { 2 } ^ { * } = x \left( a \mathrm { e } ^ { \lambda x } + b \mathrm { e } ^ { - \lambda x } \right) .$$ 
+
+所以应选(C). 
+
+---
+
+## 10
+
+**题目**
+
+微分方程 $y ^ { \prime \prime } - 4 y ^ { \prime } + 8 y = \mathrm { e } ^ { 2 x } ( 1 + \cos 2 x )$ 的特解可设为 $y ^ { * } =$ 
+(A) $A \mathrm { e } ^ { 2 x } + \mathrm { e } ^ { 2 x } ( B \cos 2 x + C \sin 2 x ) $.
+(B) $A x \mathrm { e } ^ { 2 x } + \mathrm { e } ^ { 2 x } ( B \cos 2 x + C \sin 2 x ) $. 
+(C) $A \mathrm { e } ^ { 2 x } + x \mathrm { e } ^ { 2 x } ( B \cos 2 x + C \sin 2 x ) $. 
+(D) $A x \mathrm { e } ^ { 2 x } + x \mathrm { e } ^ { 2 x } ( B \cos 2 x + C \sin 2 x ) $. 
+
+**知识点**
+
+- 二阶常系数微分方程
+
+**答案**
+
+(C)
+
+**解析**
+
+因方程 $y ^ { \prime \prime } - 4 y ^ { \prime } + 8 y = 0$ 所对应的特征方程为 $r ^ { 2 } - 4 r + 8 = 0 $, 故 $r _ { 1 , 2 } = 2 \pm 2 i $. 
+非齐次方程 $y ^ { \prime \prime } - 4 y ^ { \prime } + 8 y = \mathrm { e } ^ { 2 x } $, 因2不是齐次的特征根，故其特解可设为 $y _ { 1 } ^ { * } = A \mathrm { e } ^ { 2 r } $; 
+非齐次方程 $y ^ { \prime \prime } - 4 y ^ { \prime } + 8 y = \mathrm { e } ^ { 2 x } \cos 2 x $, 因 $2 \pm 2 i$ 是齐次的特征根，故其特解可设为$$y _ { 2 } ^ { * } = x \mathrm { e } ^ { 2 x } ( B \cos 2 x + C \sin 2 x ) .$$ 
+
+从而方程 $y ^ { \prime \prime } - 4 y ^ { \prime } + 8 y = \mathrm { e } ^ { 2 x } ( 1 + \cos 2 x )$ 的特解可设为
+$$y ^ { * } = y _ { i } ^ { * } + y _ { 2 } ^ { * } = A \mathrm { e } ^ { 2 x } + x \mathrm { e } ^ { 2 x } ( B \cos 2 x + C \sin 2 x ) ,$$ 
+
+综上可知，本题应选 (C). 
+
+---
+
+<span className={style1.ZHAOKAIFENGurl}>更高质量的考研数学精讲请访问「荒原之梦考研数学」 Ultra 版：www.zhaokaifeng.com</span>
+
+---
+
+## 11
+
+**题目**
+
+微分方程 $y ^ { \prime \prime } - y = \mathrm { e } ^ { x } + 1$ 的一个特解应具有形式（选项中的 $a , b$ 为常数) 
+
+(A) $a \mathrm { e } ^ { x } + b $.	(B) $a x \mathrm { e } ^ { x } + b $.	(C) $a \mathrm { e } ^ { x } + b x $.	(D) $a x \mathrm { e } ^ { x } + b x$.
+
+**知识点**
+
+- 二阶常系数非齐次微分方程
+
+**答案**
+
+(B)
+
+**解析**
+
+微分方程 $y ^ { \prime \prime } - y = \mathrm { e } ^ { x } + 1$ 所对应的齐次微分方程的特征方程为 $r ^ { 2 } - 1 = 0 $, 它的两个根是 $r _ { 1 } = 1 , r _ { 2 } = - 1 $. 设 $y ^ { \prime \prime } - y = \mathrm { e } ^ { x }$ 的特解 $Y _ { 1 } = x \cdot a \mathrm { e } ^ { x } ; y ^ { \prime \prime } - y = 1$ 的特解 $Y _ { 2 } = b $. 则由叠加原理知原方程必有特解 $Y = Y _ { 1 } + Y _ { 2 } = x \cdot a \mathrm { e } ^ { x } + b $.
+
+综上可知，本题应选 (B). 
+
+---
+
+## 12
+
+**题目**
+
+已知微分方程 $y ^ { \prime \prime } + a y ^ { \prime } + b y = c \mathrm { e } ^ { x }$ 的通解为 $y = \left( C _ { 1 } + C _ { 2 } x \right) \mathrm { e } ^ { - x } + \mathrm { e } ^ { x } ,$ $a, b, c$ 次为
+
+(A) 1,0,1.	(B) 1,0,2.	(C) 2,1,3.	(D) 2 , 1 , 4. 
+
+**知识点**
+
+- 二阶常系数非齐次微分方程
+
+**答案**
+
+(D)
+
+**解析**
+
+由微分方程的通解 $y = \left( C _ { 1 } + C _ { 2 } x \right) \mathrm { e } ^ { - x } + \mathrm { e } ^ { x }$ 知，原方程对应的齐次方程的特征方程的根为 $\lambda _ { 1 } = \lambda _ { 2 } = - 1 $, 且 $y ^ { * } = \mathrm { e } ^ { x }$ 为非齐次方程的一个特解.从而特征方程为 $( \lambda + 1 ) ^ { 2 } = 0 $, 即 $\lambda ^ { 2 } + 2 \lambda + 1 = 0 $, 故 $a = 2 , b = 1 $. 将 $y ^ { * } = \mathrm { e } ^ { x }$ 代入方程有 $\mathrm { e } ^ { x } + 2 \cdot \mathrm { e } ^ { x } +$ $\mathrm { e } ^ { x } = c \mathrm { e } ^ { x } $, 得 $c = 4 $.
+
+综上可知，本题应选 (D) 
+
+---
+
+## 13
+
+**题目**
+
+设 $y = \frac { 1 } { 2 } \mathrm { e } ^ { 2 x } + \left( x - \frac { 1 } { 3 } \right) \mathrm { e } ^ { x }$ 是二阶常系数非齐次线性微分方程 $y ^ { \prime \prime } + a y ^ { \prime } + b y = c \mathrm { e } ^ { x }$ 的一个特解，则
+
+(A) $a = - 3 , b = 2 , c = - 1 $.	(B) $a = 3 , b = 2 , c = - 1 $. 
+
+(C) $a = - 3 , b = 2 , c = 1 $.	    (D) $a = 3 , b = 2 , c = 1 $. 
+
+**知识点**
+
+- 二阶常系数非齐次微分方程
+
+**答案**
+
+(A)
+
+**解析**
+
+因方程右端白由项为 $c \mathrm { e } ^ { x } $, 故 $\frac { 1 } { 2 } \mathrm { e } ^ { 2 x }$ 为对应齐次方程的解，从而 $r _ { 1 } = 2$ 为特征方程的一个根；于是 $x \mathrm { e } ^ { x }$ 一定不是齐次方程的解，否则 $r = 1$ 应是特征方程的二重根，故 $x \mathrm { e } ^ { x }$ 为非齐次方程的解；再由二阶常系数非齐次线性微分方程解的结构知 $- \frac { 1 } { 3 } \mathrm { e } ^ { x }$ 应是对应齐次方程的解，从而 $r _ { 2 } = 1$ 为特征方程的另一个根.故特征方程为 $( r - 1 ) ( r - 2 ) = 0 $, 即 $r ^ { 2 } - 3 r + 2 = 0 $, 则对应的齐次方程为 $y ^ { \prime \prime } - 3 y ^ { \prime } + 2 y = 0 $. 即 $a = - 3 , b = 2 $. 
+
+将 $x \mathrm { e } ^ { x }$ 代入 $y ^ { \prime \prime } - 3 y ^ { \prime } + 2 y = c \mathrm { e } ^ {x}$ 中，有 $\left( x \mathrm { e } ^ { x } \right) ^ { \prime \prime } - 3 \left( x \mathrm { e } ^ { x } \right) ^ { \prime } + 2 x \mathrm { e } ^ { x } = c \mathrm { e } ^ { x } ,$ 于是有 $x + 2 - 3 ( x + 1 ) + 2 x = c $, 从而 $c = - 1 $. 
+
+综上可知，本题应选 (A).
+
+---
+
+## 14
+
+**题目**
+
+设线性无关的函数 $y _ { 1 } , y _ { 2 } , y _ { 3 }$ 都是二阶非齐次线性方程 $y ^ { \prime \prime } + p ( x ) y ^ { \prime } + q ( x ) y =$ $f ( x )$ 的解， $C _ { 1 } , C _ { 2 }$ 是任意常数，则该非齐次方程的通解是
+
+(A) $C _ { 1 } y _ { 1 } + C _ { 2 } y _ { 2 } + y _ { 3 } $.					(B) $C _ { 1 } y _ { 1 } + C _ { 2 } y _ { 2 } - \left( C _ { 1 } + C _ { 2 } \right) y _ { 3 } .$ 
+
+(C) $C _ { 1 } y _ { 1 } + C _ { 2 } y _ { 2 } - \left( 1 - C _ { 1 } - C _ { 2 } \right) y _ { 3 } .$		(D) $C _ { 1 } y _ { 1 } + C _ { 2 } y _ { 2 } + \left( 1 - C _ { 1 } - C _ { 2 } \right) y _ { 3 } .$ 
+
+**知识点**
+
+- 二阶常系数非齐次微分方程
+
+**答案**
+
+(D)
+
+**解析**
+
+由二阶常系数非齐次线性微分方程解的结构知： $y _ { 1 } - y _ { 3 } , y _ { 2 } - y _ { 3 }$ 为 $y ^ { \prime \prime } + p ( x ) y ^ { \prime } + q ( x ) y = 0$ 的线性无关的两个特解，故非齐次方程的通解为
+
+ $y = C _ { 1 } \left( y _ { 1 } - y _ { 3 } \right) + C _ { 2 } \left( y _ { 2 } - y _ { 3 } \right) + y _ { 3 } ,$ 即 $y = C _ { 1 } y _ { 1 } + C _ { 2 } y _ { 2 } + \left( 1 - C _ { 1 } - C _ { 2 } \right) y _ { 3 } ,$ 故应选(D). 
+
+---
+
+## 15
+
+**题目**
+
+（数一、二）在下列微分方程中，以 $y = C _ { 1 } \mathrm { e } ^ { x } + C _ { 2 } \cos 2 x + C _ { 3 } \sin 2 x \left( C _ { 1 } , C _ { 2 } , C _ { 3 } \right.$ 为任意常数)为通解的是
+
+(A) $y ^ { \prime \prime \prime} + y ^ { \prime \prime } - 4 y ^ { \prime } - 4 y = 0 $.	(B) $y ^ { \prime \prime \prime } + y ^ { \prime \prime } + 4 y ^ { \prime } + 4 y = 0 $. 
+
+(C) $y ^ { \prime \prime \prime } - y ^ { \prime \prime } - 4 y ^ { \prime } + 4 y = 0 $.	(D) $y ^ { \prime \prime \prime } - y ^ { \prime \prime } + 4 y ^ { \prime } - 4 y = 0 $. 
+
+**知识点**
+
+- 三阶常系数微分方程
+
+**答案**
+
+(D)
+
+**解析**
+
+由三阶常系数线性齐次微分方程解的结构知， $\mathrm { e } ^ { x } , \cos 2 x , \sin 2 x$ 为三阶常系数线性齐次微分方程的三个线性无关的解，故 $r _ { 1 } = 1 , r _ { 2 , 3 } = \pm 2 i$ 为特征方程的3个不同的根，从而特征方程为 $( r - 1 ) \left( r ^ { 2 } + 4 \right) = 0 ,$ 即 $r ^ { 3 } - r ^ { 2 } + 4 r - 4 = 0 $, 从而齐次方程为$$y ^ { \prime \prime \prime } - y ^ { \prime \prime } + 4 y ^ { \prime } - 4 y = 0 ,$$ 
+
+综上可知，本题应选 (D). 
+
+---
+
+<span className={style1.ZHAOKAIFENGurl}>更高质量的考研数学精讲请访问「荒原之梦考研数学」 Ultra 版：www.zhaokaifeng.com</span>
+
+---
+
+## 16
+
+**题目**
+
+（数一、二）具有特解 $y _ { 1 } = \mathrm { e } ^ { - x } , y _ { 2 } = 2 x \mathrm { e } ^ { - x } , y _ { 3 } = 3 \mathrm { e } ^ { x }$ 的3阶常系数齐次线性微分方程是()
+
+(A) $y ^ { \prime \prime \prime } - y ^ { \prime \prime } - y ^ { \prime } + y = 0$		(B) $y ^ { \prime \prime \prime } + y ^ { \prime \prime } - y ^ { \prime } - y = 0 $. 
+
+(C) $y ^ { \prime \prime \prime } - 6 y ^ { \prime \prime } + 1 1 y ^ { \prime } - 6 y = 0 $.	(D) $y ^ { \prime \prime \prime } - 2 y ^ { \prime \prime } - y ^ { \prime } + 2 y = 0 $. 
+
+**知识点**
+
+- 三阶常系数微分方程
+
+**答案**
+
+(B)
+
+**解析**
+
+因 $\mathrm { e } ^ { - x } , 2 x \mathrm { e } ^ { - x } , 3 \mathrm { e } ^ { x }$ 为 $3$ 阶常系数齐次线性微分方程的解，故 $-1$ 为特征方程的二重根，$1$ 为特征方程的单根，从而特征方程为 $( r + 1 ) ^ { 2 } ( r - 1 ) = 0 $, 即 $\left( r ^ { 2 } + \right.$ $2 r + 1 ) ( r - 1 ) = 0 $, 从而 $r ^ { 3 } + r ^ { 2 } - r - 1 = 0 $. 由三阶常系数线性齐次微分方程与特征方程的关系知，微分方程应为 $y ^ { \prime \prime \prime } + y ^ { \prime \prime } - y ^ { \prime } - y = 0 $.
+
+综上可知，本题应选 (B). 
+
+---
+
+## 17
+
+**题目**
+
+微分方程 $2 y y ^ { \prime } - y ^ { 2 } - 2 = 0$ 满足条件 $y ( 0 ) = 1$ 的特解 $y = ?$ 
+
+**知识点**
+
+- 一阶微分方程
+
+**答案**
+
+$\sqrt { 3 \mathrm { e } ^ { x } - 2 }$
+
+**解析** 
+因 $2 y y ^ { \prime } = y ^ { 2 } + 2 $, 从而：
+
+$y ^ { \prime } = \frac { y ^ { 2 } + 2 } { 2 y } $, 即 $\frac { 2 y } { y ^ { 2 } + 2 } \mathrm { ~ d } y = \mathrm { d } x $, 
+
+两边积分得 $\int \frac { 2 y } { y ^ { 2 } + 2 } \mathrm { ~ d } y = \int \mathrm { d } x $, 从而 $\ln \left( y ^ { 2 } + 2 \right) = x + c _ { 1 } ,$ 故 $y ^ { 2 } + 2 = \mathrm { e } ^ { x + c _ { 1 } } $. 令 $C =$ $\mathrm { e } ^ { c _ { 1 } } $, 从而 $y ^ { 2 } + 2 = C \mathrm { e } ^ { x } $
+
+又 $y ( 0 ) = 1 $, 得 $C = 3 $. 从而 $y ^ { 2 } + 2 = 3 \mathrm { e } ^ { x } $, 于是 $y = \sqrt { 3 \mathrm { e } ^ { x } - 2 } $.
+
+---
+
+## 18
+
+**题目**
+
+微分方程 $\frac { \mathrm { d } y } { \mathrm { ~ d } x } = \frac { y } { x } - \frac { 1 } { 2 } \left( \frac { y } { x } \right) ^ { 3 }$ 满足 $\left. y \right| _ { x = 1 } = 1$ 的特解为 $y = ?$
+
+**知识点**
+
+- 一阶微分方程
+
+**答案**
+
+$\frac { x } { \sqrt { \ln x + 1 } }$
+
+**解析**
+令 $u = \frac { y } { x } $, 则 $y = x u , y ^ { \prime } = u + x u ^ { \prime } $, 原方程化为
+
+$$u + x u ^ { \prime } = u - \frac { 1 } { 2 } u ^ { 3 }$$
+
+即 $\frac { - 2 \mathrm { ~ d } u } { u ^ { 3 } } = \frac { \mathrm { d } x } { x } $, 两边积分得 $u ^ { - 2 } = \ln x + C $. 
+
+因 $x = 1 , y = 1 $, 故 $u = 1 $, 从而 $C = 1 $, 故 $u ^ { 2 } = \frac { 1 } { \ln x + 1 } $, 从而 $y ^ { 2 } = \frac { x ^ { 2 } } { \ln x + 1 } $, 即$$y = \frac { x } { \sqrt { \ln x + 1 } }$$
+
+【注】由题中已知条件 $y ( 1 ) = 1 $, 故可认为 $x > 0 , y > 0 $. 
+
+---
+
+## 19
+
+**题目**
+
+微分方程 $x y ^ { \prime } + y = 0$ 满足初始条件 $y ( 1 ) = 2$ 的特解为
+
+**知识点**
+
+- 一阶微分方程
+
+**答案**
+
+$y = \frac { 2 } { x }$
+
+**解析**
+微分方程 $x y ^ { \prime } + y = 0$ 可化为 $( x y ) ^ { \prime } = 0 $, 即 $x y = C $. 
+
+因 $y ( 1 ) = 2 $, 故 $C = 2 $, 从而 $y = \frac { 2 } { x } $. 
+
+---
+
+## 20
+
+**题目**
+
+设函数 $f ( x )$ 满足 $f ( x + \Delta x ) - f ( x ) = 2 x f ( x ) \Delta x + o ( \Delta x ) $, 且 $f ( 0 ) = 2 $, 则$f ( 1 ) = ?$ 
+
+**知识点**
+
+- 一阶微分方程
+
+**答案**
+
+$2 \mathrm { e }$
+
+**解析**
+由已知，得：
+
+$$f ^ { \prime } ( x ) = \lim _ { \Delta x \rightarrow 0 } \frac { f ( x + \Delta x ) - f ( x ) } { \Delta x } = \lim _ { \Delta x \rightarrow 0 } \frac { 2 x f ( x ) \Delta x + o ( \Delta x ) } { \Delta x } = 2 x f ( x ) ,$$ 
+
+分离变量，得 $\frac { \mathrm { d } f ( x ) } { f ( x ) } = 2 x \mathrm { ~ d } x $, 两边积分得 $\ln | f ( x ) | = x ^ { 2 } + C _ { 1 } $, 
+
+故 $f ( x ) = C \mathrm { e } ^ { x ^ { 2 } } $, 其中 $C = \pm \mathrm { e } ^ { c _ { i } } $. 又 $f ( 0 ) = 2 $, 从而 $f ( x ) = 2 \mathrm { e } ^ { x ^ { 2 } } $, 故 $f ( 1 ) = 2 \mathrm { e } $. 
+
+---
+
+<span className={style1.ZHAOKAIFENGurl}>更高质量的考研数学精讲请访问「荒原之梦考研数学」 Ultra 版：www.zhaokaifeng.com</span>
+
+---
+
+## 21
+
+**题目**
+
+微分方程 $y ^ { \prime } + y \tan x = \cos x$ 的通解为 $y = ?$ 
+
+**知识点**
+
+- 一阶微分方程
+
+**答案**
+
+$x \cos x + C \cos x , C$ 为任意常数. 
+
+**解析**
+
+**解法一：**
+
+由一阶线性微分方程的求解公式知
+$$y = \mathrm { e } ^ { - \int \tan x \mathrm { ~ d } x } \left[ \int \cos x \cdot \mathrm { e } ^ { \int \tan x \mathrm { ~ d } x } \mathrm { ~ d } x + C _ { 1 } \right]$$ 
+$$= \mathrm { e } ^ { \ln | \cos x | } \left[ \int \cos x \cdot \frac { 1 } { | \cos x | } \mathrm { ~ d } x + C _ { 1 } \right]$$ 
+$$= | \cos x | \left[ \int \frac { \cos x } { | \cos x | } \mathrm { ~ d } x + C _ { 1 } \right]$$ 
+$$= \left\{ \begin{array} { c c } \cos x \cdot \left( \int 1 \mathrm { ~ d } x + C _ { 1 } \right) , & \cos x > 0 , \\ - \cos x \cdot \left( - \int 1 \mathrm { ~ d } x + C _ { 1 } \right) , & \cos x < 0 . \end{array} \right.$$ 
+$$= x \cos x \pm C _ { 1 } \cos x ,$$ 
+令 $C = \pm C _ { 1 } $, 则 $y = x \cos x + C \cos x $, 其中 $C$ 为任意常数. 
+
+**解法二：**
+
+原方程 $y ^ { \prime } + y \tan x = \cos x$ 可化为
+
+ $\frac { 1 } { \cos x } \cdot \left( y ^ { \prime } + y \cdot \frac { \sin x } { \cos x } \right) = \cos x \frac { 1 } { \cos x } ,$ 即 $\frac { y ^ { \prime } \cos x - y ( \cos x ) ^ { \prime } } { \cos ^ { 2 } x } = 1 $, 也就是
+
+
+ $\left( \frac { y } { \cos x } \right) ^ { \prime } = 1 ,$ 两 边对 $x$ 积分，得 $\frac { y } { \cos x } = x + C $, 故 $y = x \cos x + C \cos x $, 其中 $C$ 为任意常数. 
+
+
+---
+
+## 22
+
+**题目**
+
+微分方程 $x y ^ { \prime } + y ( \ln x - \ln y ) = 0$ 满足条件 $y ( 1 ) = \mathrm { e } ^ { 3 }$ 的解为 $y =$ 
+
+**知识点**
+
+- 一阶微分方程
+
+**答案**
+
+$x \mathrm { e } ^ { 2 x + 1 }$
+
+**解析**
+
+方程 $x y ^ { \prime } + y ( \ln x - \ln y ) = 0$ 可变形为 $y ^ { \prime } = \frac { y } { x } \ln \frac { y } { x } $, 此方程为齐次方程
+
+令 $u = \frac { y } { x } $, 则 $y ^ { \prime } = u + x u ^ { \prime } $, 从而
+ $u + x \frac { \mathrm { d } u } { \mathrm { ~ d } x } = u \ln u $, 即 $\frac { \mathrm { d } u } { u \ln u - u } = \frac { \mathrm { d } x } { x } $, 
+
+两边积分得 $\ln ( \ln u - 1 ) = \ln x + C _ { 1 } $, 即 $\frac { \ln u - 1 } { x } = \mathrm { e } ^ { c _ { 1 } } $. 令 $C = \mathrm { e } ^ { c _ { 1 } } $, 故 $\ln u - 1 = C x $. 
+
+因 $x = 1$ 时 $y = \mathrm { e } ^ { 3 } $, 故 $u = \mathrm { e } ^ { 3 } $, 代入上式得 $C = 2 $, 
+
+从而 $u = \mathrm { e } ^ { 2 x + 1 } $, 即 $\frac { y } { x } = \mathrm { e } ^ { 2 x + 1 } $, 也就是 $y = x \mathrm { e } ^ { 2 x + 1 } $. 
+
+
+---
+
+## 23
+
+**题目**
+
+微分方程 $y ^ { \prime } + y = \mathrm { e } ^ { - x } \cos x$ 满足条件 $y ( 0 ) = 0$ 的解为 $y =$ 
+
+**知识点**
+
+- 一阶微分方程
+
+**答案**
+
+$\mathrm { e } ^ { - x } \sin x$
+
+**解析**
+【法1】根据一阶线性微分方程的通解公式，得
+$$y ( x ) = \mathrm { e } ^ { - \int \mathrm { d } x } \left( \int \mathrm { e } ^ { - x } \cos x \cdot \mathrm { e } ^ { \int \mathrm { d } x } \mathrm { ~ d } x + C \right) = \mathrm { e } ^ { - x } \left( \int \cos x \mathrm { ~ d } x + C \right) = \mathrm { e } ^ { - x } ( \sin x + C ) .$$ 
+又 $y ( 0 ) = 0 $, 故 $C = 0 $, 从而 $y = \mathrm { e } ^ { - x } \sin x $. 
+
+【法2】方程 $y ^ { \prime } + y = \mathrm { e } ^ { - x } \cos x$ 可变形为
+ $\mathrm { e } ^ { x } y ^ { \prime } + \mathrm { e } ^ { x } y = \cos x $, 即 $\left( \mathrm { e } ^ { x } y \right) ^ { \prime } = \cos x ,$ 
+两边积分得 $\mathrm { e } ^ { x } y = \sin x + C $. 
+又 $y ( 0 ) = 0 $, 故 $C = 0 $, 从而 $y = \mathrm { e } ^ { - x } \sin x $. 
+
+
+---
+
+## 24
+
+**题目**
+
+微分方程 $y ^ { \prime } = \frac { y ( 1 - x ) } { x }$ 的通解是
+
+**知识点**
+
+- 一阶微分方程
+
+**答案**
+
+$y = C x \mathrm { e } ^ { - x } $, 其中 $C$ 为任意常数
+
+**解析**
+当 $y \neq 0$ 时，方程 $y ^ { \prime } = \frac { y ( 1 - x ) } { x }$ 可变形为 $\frac { \mathrm { d } y } { y } = \frac { 1 - x } { x } \mathrm { ~ d } x $, 两边积分得 $\ln | y | = \ln | x | - x + C _ { 1 } $, 即：
+
+$\ln \left| \frac { y } { x } \right| = - x + C _ { 1 } ,$ 故 $\left| \frac { y } { x } \right| = \mathrm { e } ^ { x + C _ { 1 } }$, 
+
+从而 $y = \pm \mathrm { e } ^ { c _ { 1 } } \cdot x \mathrm { e } ^ { - x } $. 令 $C = \pm \mathrm { e } ^ { c _ { 1 } } $. 则 $y = C x \mathrm { e } ^ { - x } $, 其中 $C = 0$.
+
+将 $y = 0$ 代入 $y ^ { \prime } = \frac { y ( 1 - x ) } { x }$ 中，易知方程成立，故 $y = 0$ 是方程的特解
+
+综上可知， $y = C x \mathrm { e } ^ { - x }$ 为方程 $y ^ { \prime } = \frac { y ( 1 - x ) } { x }$ 的通解，其中 $C$ 为任意常数. 
+
+
+---
+
+## 25
+
+**题目**
+
+微分方程 $y \mathrm { ~ d } x + \left( x - 3 y ^ { 2 } \right) \mathrm { d } y = 0$ 满足条件 $\left. y \right| _ { x = 1 } = 1$ 的解为 $y =$ 
+
+**知识点**
+
+- 一阶微分方程
+
+**答案**
+
+$y = \sqrt { x }$
+
+**解析**
+**解法一：**方程 $y \mathrm { ~ d } x + \left( x - 3 y ^ { 2 } \right) \mathrm { d } y = 0$ 可变形为 $( y \mathrm { ~ d } x + x \mathrm { ~ d } y ) - 3 y ^ { 2 } \mathrm { ~ d } y = 0 $, 即 $\mathrm { d } ( x y ) - \mathrm { d } \left( y ^ { 3 } \right) = 0 ,$ 即 $\mathrm { d } \left( x y - y ^ { 3 } \right) = 0 ,$ 故 $x y - y ^ { 3 } = C $. 因 $x = 1$ 时， $y = 1 $, 故 $C = 0 $, 从而 $y ^ { 2 } = x$ 即 $y = \sqrt { x }$ 为满足条件的特解.
+
+**解法二：**将微分方程变形为
+ $\frac { \mathrm { d } x } { \mathrm { ~ d } y } + \frac { x } { y } = 3 y $, 这是一阶线性微分方程，其通解为：
+$$x = \mathrm { e } ^ { \int \frac { 1 } { y } \mathrm { ~ d } y } \left( \int 3 y \mathrm { e } ^ { \int \frac { 1 } { y } \mathrm { ~ d } y } \mathrm { ~ d } y + C \right) = \frac { 1 } { y } \left( \int 3 y ^ { 2 } \mathrm { ~ d } y + C \right) = y ^ { 2 } + \frac { C } { y } .$$ 
+将 $\left. y \right| _ { x - 1 } = 1$ 代人上式，得 $C = 0 $, 于是 $x = y ^ { 2 } $. 即 $y = \pm \sqrt { x } $, 注意到 $\left. y \right| _ { x = 1 } = 1 ,$ 故将 $y = - \sqrt { x }$ 舍去，得 $y = \sqrt { x } $. 
+
+---
+
+<span className={style1.ZHAOKAIFENGurl}>更高质量的考研数学精讲请访问「荒原之梦考研数学」 Ultra 版：www.zhaokaifeng.com</span>
+
+---
+
+## 26
+
+**题目**
+
+微分方程 $\left( y + x ^ { 2 } \mathrm { e } ^ { - x } \right) \mathrm { d } x - x \mathrm { ~ d } y = 0$ 的通解是 $y =$ 
+
+**知识点**
+
+- 一阶微分方程
+
+**答案**
+
+$- x \mathrm { e } ^ { - x } + C x $, 其中 $C$ 为任意常数
+
+**解析**
+**解法一：**方程 $\left( y + x ^ { 2 } \mathrm { e } ^ { - x } \right) \mathrm { d } x - x \mathrm { ~ d } y = 0$ 可化为 $\frac { \mathrm { d } y } { \mathrm { ~ d } x } - \frac { 1 } { x } y = x \mathrm { e } ^ { - x } $, 由一阶线性微分方程的求解公式知， $$y = \mathrm { e } ^ { - \int - \frac { 1 } { x } \mathrm { ~ d } x } \left( \int x \mathrm { e } ^ { - x } \mathrm { e } ^ { - \int \frac { 1 } { x } \mathrm { ~ d } x } \mathrm { ~ d } x + C \right) = x \left( \int \frac { x \mathrm { e } ^ { - x } } { x } \mathrm { ~ d } x + C \right) = - x \mathrm { e } ^ { - x } + C x ,$$ 
+
+其中 $C$ 为任意常数
+
+**解法二：**方程 $\left( y + x ^ { 2 } \mathrm { e } ^ { - x } \right) \mathrm { d } x - x \mathrm { ~ d } y = 0$ 可化为 $- y \mathrm { ~ d } x + x \mathrm { ~ d } y - x ^ { 2 } \mathrm { e } ^ { - x } \mathrm { ~ d } x = 0 $, 
+即 $\frac { - y \mathrm { ~ d } x + x \mathrm { ~ d } y } { x ^ { 2 } } - \mathrm { e } ^ { - x } \mathrm { ~ d } x = 0 $, 凑微分得 $\mathrm { d } \left( \frac { 1 } { x } y \right) + \mathrm { d } \left( \mathrm { e } ^ { - x } \right) = 0 ,$ 即 $\mathrm { d } \left( \frac { y } { x } + \mathrm { e } ^ { - x } \right) = 0 ,$ 
+从而 $\frac { y } { x } + \mathrm { e } ^ { - x } = C $, 故 $y = C x - x \mathrm { e } ^ { - x } $, 其中 $C$ 为任意常数.
+
+
+---
+
+## 27
+
+**题目**
+
+微分方程 $x y ^ { \prime } + 2 y = x \ln x$ 满足 $y ( 1 ) = - \frac { 1 } { 9 }$ 的解为
+
+**知识点**
+
+- 一阶微分方程
+
+**答案**
+
+$y = \frac { 1 } { 3 } x \ln x - \frac { x } { 9 }$
+
+**解析**
+**方法一：**方程 $x y ^ { \prime } + 2 y = x \ln x$ 可化为 $y ^ { \prime } + \frac { 2 } { x } y = \ln x $, 由一阶线性微分方程的求解公式，有$$y = \mathrm { e } ^ { - \int \frac { 2 } { x } \mathrm { ~ d } x } \left( \int \ln x \cdot \mathrm { e } ^ { \int \frac { 2 } { x } \mathrm { ~ d } x } \mathrm { ~ d } x + C \right) = \mathrm { e } ^ { - 2 \ln x } \left( \int x ^ { 2 } \ln x \mathrm { ~ d } x + C \right)$$ 
+
+$$= \frac { 1 } { x ^ { 2 } } \left[ \frac { 1 } { 3 } \int \ln x \mathrm { ~ d } \left( x ^ { 3 } \right) + C \right] = \frac { 1 } { x ^ { 2 } } \left[ \frac { 1 } { 3 } \left( x ^ { 3 } \ln x - \int x ^ { 3 } \cdot \frac { 1 } { x } \mathrm { ~ d } x \right) + C \right]$$ 
+
+$$= \frac { 1 } { x ^ { 2 } } \left( \frac { 1 } { 3 } x ^ { 3 } \ln x - \frac { 1 } { 9 } x ^ { 3 } + C \right) = \frac { 1 } { 3 } x \ln x - \frac { x } { 9 } + \frac { C } { x ^ { 2 } }$$
+
+由 $y ( 1 ) = - \frac { 1 } { 9 } $, 得 $C = 0 $, 从而 $y = \frac { 1 } { 3 } x \ln x - \frac { 1 } { 9 } x $. 
+
+**方法二：**原方程可化为 $x ^ { 2 } y ^ { \prime } + 2 x y = x ^ { 2 } \ln x $, 即 $\left( x ^ { 2 } y \right) ^ { \prime } = x ^ { 2 } \ln x ,$ 两边积分，得$$x ^ { 2 } y = \int x ^ { 2 } \ln x \mathrm { ~ d } x = \frac { 1 } { 3 } x ^ { 3 } \ln x - \frac { 1 } { 9 } x ^ { 3 } + C ,$$ 
+
+因为 $y ( 1 ) = - \frac { 1 } { 9 } $, 代人得 $C = 0 $, 故 $y = \frac { 1 } { 3 } x \ln x - \frac { 1 } { 9 } x $. 
+
+
+---
+
+## 28
+
+**题目**
+
+微分方程 $\left( y + x ^ { 3 } \right) \mathrm { d } x - 2 x \mathrm { ~ d } y = 0$ 满足 $\left. y \right| _ { x = 1 } = \frac { 6 } { 5 }$ 的特解为
+
+**知识点**
+
+- 一阶微分方程
+
+**答案**
+
+$y = \frac { 1 } { 3 } x \ln x - \frac { x } { 9 }$
+
+**解析** 
+**方法一：**方程 $x y ^ { \prime } + 2 y = x \ln x$ 可化为 $y ^ { \prime } + \frac { 2 } { x } y = \ln x $, 由一阶线性微分方程的求解公式，有：
+
+$$y = \mathrm { e } ^ { - \int \frac { 2 } { x } \mathrm { ~ d } x } \left( \int \ln x \cdot \mathrm { e } ^ { \int \frac { 2 } { x } \mathrm { ~ d } x } \mathrm { ~ d } x + C \right) = \mathrm { e } ^ { - 2 \ln x } \left( \int x ^ { 2 } \ln x \mathrm { ~ d } x + C \right)$$
+
+$$= \frac { 1 } { x ^ { 2 } } \left[ \frac { 1 } { 3 } \int \ln x \mathrm { ~ d } \left( x ^ { 3 } \right) + C \right] = \frac { 1 } { x ^ { 2 } } \left[ \frac { 1 } { 3 } \left( x ^ { 3 } \ln x - \int x ^ { 3 } \cdot \frac { 1 } { x } \mathrm { ~ d } x \right) + C \right]$$
+
+$$= \frac { 1 } { x ^ { 2 } } \left( \frac { 1 } { 3 } x ^ { 3 } \ln x - \frac { 1 } { 9 } x ^ { 3 } + C \right) = \frac { 1 } { 3 } x \ln x - \frac { x } { 9 } + \frac { C } { x ^ { 2 } }$$
+
+由 $y ( 1 ) = - \frac { 1 } { 9 } $, 得 $C = 0 $, 从而 $y = \frac { 1 } { 3 } x \ln x - \frac { 1 } { 9 } x$
+
+**方法二：**原方程可化为 $x ^ { 2 } y ^ { \prime } + 2 x y = x ^ { 2 } \ln x $, 即 $\left( x ^ { 2 } y \right) ^ { \prime } = x ^ { 2 } \ln x ,$ 两边积分，得：
+
+$$x ^ { 2 } y = \int x ^ { 2 } \ln x \mathrm { ~ d } x = \frac { 1 } { 3 } x ^ { 3 } \ln x - \frac { 1 } { 9 } x ^ { 3 } + C$$
+
+因为 $y ( 1 ) = - \frac { 1 } { 9 } $, 代人得 $C = 0 $, 故 $y = \frac { 1 } { 3 } x \ln x - \frac { 1 } { 9 } x $. 
+
+
+---
+
+## 29
+
+**题目**
+
+过点 $\left( \frac { 1 } { 2 } , 0 \right)$ 且满足关系式 $y ^ { \prime } \arcsin x + \frac { y } { \sqrt { 1 - x ^ { 2 } } } = 1$ 的曲线方程为？
+
+**知识点**
+
+- 一阶微分方程
+
+**答案**
+
+$y \arcsin x = x - \frac { 1 } { 2 } $
+
+**解析** 
+
+关系式 $y ^ { \prime } \arcsin x + \frac { y } { \sqrt { 1 - x ^ { 2 } } } = 1$ 等价于 $( y \arcsin x ) ^ { \prime } = 1 $, 两 边对 $x$ 积分，得$$y \arcsin x = x + C ,$$ 
+
+又曲线过点 $\left( \frac { 1 } { 2 } , 0 \right) ,$ 从而 $0 = \frac { 1 } { 2 } + C $, 得 $C = - \frac { 1 } { 2 } $. 
+
+于是曲线方程为 $y \arcsin x = x - \frac { 1 } { 2 } $.
+
+---
+
+<span className={style1.ZHAOKAIFENGurl}>更高质量的考研数学精讲请访问「荒原之梦考研数学」 Ultra 版：www.zhaokaifeng.com</span>
+
+---
+
+## 30
+
+**题目**
+
+以 $y = x ^ { 2 } - \mathrm { e } ^ { x }$ 和 $y = x ^ { 2 }$ 为特解的一阶非齐次线性微分方程为
+
+**知识点**
+
+- 一阶微分方程
+
+**答案**
+
+$y ^ { \prime } - y = 2 x - x ^ { 2 }$
+
+**解析**
+设一阶非齐次线性微分方程为 $y ^ { \prime } + p ( x ) y = q ( x ) $.
+
+由线性微分方程解的结构知， $x ^ { 2 } - \left( x ^ { 2 } - \mathrm { e } ^ { x } \right) = \mathrm { e } ^ { x }$ 是 $y ^ { \prime } + p ( x ) y = 0$ 的解， 
+
+故 $\left( \mathrm { e } ^ { x } \right) ^ { \prime } + p ( x ) \cdot \mathrm { e } ^ { x } = 0 ,$ 得 $p ( x ) = - 1 $. 
+
+再将 $y = x ^ { 2 }$ 代人 $y ^ { \prime } - y = q ( x )$ 中，得 $q ( x ) = 2 x - x ^ { 2 } $. 
+
+从而所求方程为 $y ^ { \prime } - y = 2 x - x ^ { 2 } $. 
+
+---
+
+## 31
+
+**题目**
+
+微分方程 $x y ^ { \prime } + 2 y = x \ln x$ 满足 $y ( 1 ) = - \frac { 1 } { 9 }$ 的解为
+
+**知识点**
+
+- 一阶微分方程
+
+**答案**
+
+$y = \frac { 1 } { 3 } x \ln x - \frac { x } { 9 }$
+
+**解析**
+**方法一：**方程 $x y ^ { \prime } + 2 y = x \ln x$ 可化为 $y ^ { \prime } + \frac { 2 } { x } y = \ln x $, 由一阶线性微分方程的求解公式，有：
+
+$$y = \mathrm { e } ^ { - \int \frac { 2 } { x } \mathrm { ~ d } x } \left( \int \ln x \cdot \mathrm { e } ^ { \int \frac { 2 } { x } \mathrm { ~ d } x } \mathrm { ~ d } x + C \right) = \mathrm { e } ^ { - 2 \ln x } \left( \int x ^ { 2 } \ln x \mathrm { ~ d } x + C \right)$$
+
+$$= \frac { 1 } { x ^ { 2 } } \left[ \frac { 1 } { 3 } \int \ln x \mathrm { ~ d } \left( x ^ { 3 } \right) + C \right] = \frac { 1 } { x ^ { 2 } } \left[ \frac { 1 } { 3 } \left( x ^ { 3 } \ln x - \int x ^ { 3 } \cdot \frac { 1 } { x } \mathrm { ~ d } x \right) + C \right]$$ 
+
+$$= \frac { 1 } { x ^ { 2 } } \left( \frac { 1 } { 3 } x ^ { 3 } \ln x - \frac { 1 } { 9 } x ^ { 3 } + C \right) = \frac { 1 } { 3 } x \ln x - \frac { x } { 9 } + \frac { C } { x ^ { 2 } } ,$$ 
+
+由 $y ( 1 ) = - \frac { 1 } { 9 } $, 得 $C = 0 $, 从而 $y = \frac { 1 } { 3 } x \ln x - \frac { 1 } { 9 } x $.
+
+**方法二：**原方程可化为：
+
+$$x ^ { 2 } y ^ { \prime } + 2 x y = x ^ { 2 } \ln x ,$$ 
+
+即 $\left( x ^ { 2 } y \right) ^ { \prime } = x ^ { 2 } \ln x ,$ 两边积分，得
+
+$$x ^ { 2 } y = \int x ^ { 2 } \ln x \mathrm { ~ d } x = \frac { 1 } { 3 } x ^ { 3 } \ln x - \frac { 1 } { 9 } x ^ { 3 } + C ,$$ 
+
+因为 $y ( 1 ) = - \frac { 1 } { 9 } $, 代入得 $C = 0 $, 故 $y = \frac { 1 } { 3 } x \ln x - \frac { 1 } { 9 } x $. 
+
+
+---
+
+## 32
+
+**题目**
+
+已知 $f ^ { \prime } \left( \mathrm { e } ^ { x } \right) = x \mathrm { e } ^ { - x } ,$ 且 $f ( 1 ) = 0 $, 则 $f ( x ) =$ 
+
+**知识点**
+
+- 一阶微分方程
+
+**答案**
+
+$\frac { 1 } { 2 } \ln ^ { 2 } x$
+
+**解析**
+令 $t = \mathrm { e } ^ { x } $, 则 $x = \ln t , f ^ { \prime } ( t ) = \frac { \ln t } { t } $, 从而
+
+$$f ( t ) = \int \frac { \ln t } { t } \mathrm { ~ d } t = \frac { 1 } { 2 } \ln ^ { 2 } t + C .$$ 
+
+又 $f ( 1 ) = 0 $, 得 $C = 0 $, 从而 $f ( t ) = \frac { 1 } { 2 } \ln ^ { 2 } t $, 即 $f ( x ) = \frac { 1 } { 2 } \ln ^ { 2 } x $. 
+
+
+---
+
+## 33
+
+**题目**
+
+微分方程 $y ^ { \prime \prime } + 2 y ^ { \prime } + 3 y = 0$ 的通解为
+
+**知识点**
+
+- 二阶常系数齐次微分方程
+
+**答案**
+
+$y = \mathrm { e } ^ { - x } \left( C _ { 1 } \cos \sqrt { 2 } x + C _ { 2 } \sin \sqrt { 2 } x \right) ,$ 其中 $C _ { 1 } , C _ { 2 }$ 为任意常数.
+
+**解析** 
+微分方程 $y ^ { \prime \prime } + 2 y ^ { \prime } + 3 y = 0$ 对应的特征方程为 $r ^ { 2 } + 2 r + 3 = 0 $, 解得 $r _ { 1 , 2 } = - 1 \pm \sqrt { 2 } i $. 从而方程的通解为 $y = \mathrm { e } ^ { - x } \left( C _ { 1 } \cos \sqrt { 2 } x + C _ { 2 } \sin \sqrt { 2 } x \right) ,$ 其中 $C _ { 1 } , C _ { 2 }$ 为任意常数. 
+
+
+---
+
+## 34
+
+**题目**
+
+微分方程 $y ^ { \prime \prime } - y ^ { \prime } + \frac { 1 } { 4 } y = 0$ 的通解为 $y =$ 
+
+**知识点**
+
+- 二阶常系数齐次微分方程
+
+**答案**
+
+$C _ { 1 } \mathrm { e } ^ { \frac { 1 } { 2 } x } + C _ { 2 } x \mathrm { e } ^ { \frac { 1 } { 2 } x } $, 其中 $C _ { 1 } , C _ { 2 }$ 为任意常数.
+
+**解析**
+
+
+ 方程 $y ^ { \prime \prime } - y ^ { \prime } + \frac { 1 } { 4 } y = 0$ 所对应的特征方程为 $\lambda ^ { 2 } - \lambda + \frac { 1 } { 4 } = 0 $, 故特征根 $\lambda _ { 1 } = \lambda _ { 2 } = \frac { 1 } { 2 } $, 从而方程 $y ^ { \prime \prime } - y ^ { \prime } + \frac { 1 } { 4 } y = 0$ 的通解为 $y = C _ { 1 } \mathrm { e } ^ { \frac { 1 } { 2 } x } + C _ { 2 } x \mathrm { e } ^ { \frac { 1 } { 2 } x } $, 其中 $C _ { 1 } , C _ { 2 }$ 为任意常数. 
+
+
+---
+
+## 35
+
+**题目**
+
+微分方程 $y ^ { \prime \prime } + 2 y ^ { \prime } + 5 y = 0$ 的通解为
+
+**知识点**
+
+- 二阶常系数齐次微分方程
+
+**答案**
+
+$y = \mathrm { e } ^ { - x } \left( C _ { 1 } \cos 2 x + C _ { 2 } \sin 2 x \right) ,$ 其中 $C _ { 1 } , C _ { 2 }$ 为任意常数
+
+**解析**
+微分方程 $y ^ { \prime \prime } + 2 y ^ { \prime } + 5 y = 0$ 所对应的特征方程为 $r ^ { 2 } + 2 r + 5 = 0 $, 解得 $r = - 1 \pm 2 i $. 故通解为 $y = \mathrm { e } ^ { - x } \left( C _ { 1 } \cos 2 x + C _ { 2 } \sin 2 x \right) ,$ 其中 $C _ { 1 } , C _ { 2 }$ 为任意常数. 
+
+---
+
+<span className={style1.ZHAOKAIFENGurl}>更高质量的考研数学精讲请访问「荒原之梦考研数学」 Ultra 版：www.zhaokaifeng.com</span>
+
+---
+
+## 36
+
+**题目**
+
+微分方程 $y ^ { \prime \prime } + y = - 2 x$ 的通解为
+
+**知识点**
+
+- 二阶常系数非齐次微分方程
+
+**答案**
+
+$y = C _ { 1 } \cos x + C _ { 2 } \sin x - 2 x $, 其中 $C _ { 1 } , C _ { 2 }$ 为任意常数
+
+**解析**
+方程 $y ^ { \prime \prime } + y = - 2 x$ 对应的齐次方程 $y ^ { \prime \prime } + y = 0$ 的特征方程为 $r ^ { 2 } + 1 = 0 $, 故 $r = \pm i $, 所以 $y ^ { \prime \prime } + y = 0$ 的通解为 $\tilde { y } = C _ { 1 } \cos x + C _ { 2 } \sin x $. 
+
+设 $y ^ { \prime \prime } + y = - 2 x$ 的特解 $y ^ { * } = a x + b $, 代人 $y ^ { \prime \prime } + y = - 2 x$ 中，解得 $a = - 2 , b = 0 $, 故 $y ^ { * } = - 2 x $. 所以 $y ^ { \prime \prime } + y = - 2 x$ 的通解为
+
+ $y = \tilde { y } + y ^ { * } = C _ { 1 } \cos x + C _ { 2 } \sin x - 2 x $, 其中 $C _ { 1 } , C _ { 2 }$ 为任意常数.
+
+
+---
+
+## 37
+
+**题目**
+
+二阶常系数非齐次线性微分方程 $y ^ { \prime \prime } - 4 y ^ { \prime } + 3 y = 2 \mathrm { e } ^ { 2 x }$ 的通解为 $y =$ 
+
+**知识点**
+
+- 二阶常系数非齐次微分方程
+
+**答案**
+
+$C _ { 1 } \mathrm { e } ^ { x } + C _ { 2 } \mathrm { e } ^ { 3 x } - 2 \mathrm { e } ^ { 2 x } $, 其中 $C _ { 1 } , C _ { 2 }$ 为任意常数.
+
+**解析**
+原方程所对应的齐次方程的特征方程为 $r ^ { 2 } - 4 r + 3 = 0 $, 故 $r_{1} = 1$, $r_{2} = 3$.
+
+从而齐次方程的通解为 $\tilde { y } = C _ { 1 } \mathrm { e } ^ { x } + C _ { 2 } \mathrm { e } ^ { 3 x } $.
+
+接着，设非齐次方程的特解为 $y ^ { * } = A \mathrm { e } ^ { 2 x } $, 代人 $y ^ { \prime \prime } - 4 y ^ { \prime } + 3 y = 2 \mathrm { e } ^ { 2x }$ 中，有：
+
+$$4 A \mathrm { e } ^ { 2 x } - 8 A \mathrm { e } ^ { 2 x } + 3 A \mathrm { e } ^ { 2 x } = 2 \mathrm { e } ^ { 2 x }$$
+
+故 $- A = 2 $, 得 $A = - 2 $, 则 $y ^ { * } = - 2 \mathrm { e } ^ { 2 x } $. 从而方程 $y ^ { \prime \prime } - 4 y ^ { \prime } + 3 y = 2 \mathrm { e } ^ { 2 x }$ 的通解为：
+
+$y = \tilde { y } + y ^ { * } = C _ { 1 } \mathrm { e } ^ { x } + C _ { 2 } \mathrm { e } ^ { 3 x } - 2 \mathrm { e } ^ { 2 x } $, 其中 $C _ { 1 } , C _ { 2 }$ 为任意常数
+
+
+---
+
+## 38
+
+**题目**
+
+ $y ^ { \prime \prime } - 4 y = \mathrm { e } ^ { 2 x }$ 的通解为 $y =$ 
+
+**知识点**
+
+- 二阶常系数非齐次微分方程
+
+**答案**
+
+$C _ { 1 } \mathrm { e } ^ { 2 x } + C _ { 2 } \mathrm { e } ^ { -2x } + \frac { 1 } { 4 } x \mathrm { e } ^ { 2 x } $, 其中 $C _ { 1 } , C _ { 2 }$ 为任意常数. 
+
+**解析**
+先求二阶常系数齐次微分方程 $y ^ { \prime \prime } - 4 y = 0$ 的通解.
+
+齐次方程 $y ^ { \prime \prime } - 4 y = 0$ 的特征方程为 $r ^ { 2 } - 4 = 0 $, 解之得 $r _ { 1 , 2 } = \pm 2 $. 故齐次方程 $y ^ { \prime \prime } -$ $4 y = 0$ 的通解为 $\tilde { y } = C _ { 1 } \mathrm { e } ^ { 2 x } + C _ { 2 } \mathrm { e } ^ { -2 x } $, 其中 $C _ { 1 } , C _ { 2 }$ 为任意常数
+
+再求非齐次方程 $y ^ { \prime \prime } - 4 y = \mathrm { e } ^ { 2 x }$ 的特解.令 $y ^ { * } = A x \mathrm { e } ^ { 2 x } $, 代入 $y ^ { \prime \prime } - 4 y = \mathrm { e } ^ { 2 x }$ 中，有
+
+ $\left( A x \mathrm { e } ^ { 2 x } \right) ^ { \prime \prime } - 4 \left( A x \mathrm { e } ^ { 2 x } \right) = \mathrm { e } ^ { 2 x } ,$ 即 $4 A \mathrm { e } ^ { 2 x } = \mathrm { e } ^ { 2 x } $, 比较系数，得 $4 A = 1 $, 则 $A = \frac { 1 } { 4 } $, 从而 $y ^ { * } = \frac { 1 } { 4 } x \mathrm { e } ^ { 2 x } $.
+
+综上可知，$y ^ { \prime \prime } - 4 y = \mathrm { e } ^ { 2 x }$ 的通解为 $y = \tilde { y } + y ^ { * } = C _ { 1 } \mathrm { e } ^ { 2 x } + C _ { 2 } \mathrm { e } ^ { - 2 x } + \frac { 1 } { 4 } x \mathrm { e } ^ { 2 x } $, 其中 $C _ { 1 } , C _ { 2 }$ 为任意常数. 
+
+
+---
+
+## 39
+
+**题目**
+
+设函数 $y = y ( x )$ 是微分方程 $y ^ { \prime \prime } + y ^ { \prime } - 2 y = 0$ 的解，且在 $x = 0$ 处 $y ( x )$ 取得极值3,则 $y ( x ) =$ 
+
+**知识点**
+
+- 二阶常系数非齐次微分方程
+
+**答案**
+
+$\mathrm { e } ^ { - 2 x } + 2 \mathrm { e } ^ { x }$
+
+**解析**
+
+微分方程 $y ^ { \prime \prime } + y ^ { \prime } - 2 y = 0$ 所对应的特征方程为 $r ^ { 2 } + r - 2 = 0 $, 解之得特征根为 $r _ { 1 } = - 2 , r _ { 2 } = 1 $, 从而方程的通解为 $y ( x ) = C _ { 1 } \mathrm { e } ^ { - 2 x } + C _ { 2 } \mathrm { e } ^ { x } $.
+
+因 $x = 0$ 时， $y ( x )$ 取得极值3，从而 $y ( 0 ) = 3 , y ^ { \prime } ( 0 ) = 0 $, 则 $\left\{ \begin{array} { l } C _ { 1 } + C _ { 2 } = 3 , \\ - 2 C _ { 1 } + C _ { 2 } = 0 . \end{array} \right.$ 
+
+解得 $\left\{ \begin{array} { l } C _ { 1 } = 1 , \\ C _ { 2 } = 2 , \end{array} \right.$ 从而 $y ( x ) = \mathrm { e } ^ { - 2 x } + 2 \mathrm { e } ^ { x } $. 
+
+
+---
+
+## 40
+
+**题目**
+
+(数一、二) 微分方程 $y y ^ { \prime \prime } + y ^ { \prime 2 } = 0$ 满足初始条件 $\left. y \right| _ { x = 0 } = 1 , \left. y ^ { \prime } \right| _ { x = 0 } = \frac { 1 } { 2 }$ 的特解是
+
+**知识点**
+
+- 二阶常系数非齐次微分方程
+
+**答案**
+
+$y=\sqrt{x+1}$.
+
+**解析**
+
+方程 $yy''+{y'}^2=0$ 可变形为 $(yy')'=0$, 即 $yy'=C$.
+
+将 $y(0)=1, y'(0)=\frac{1}{2}$ 代入 $yy'=C$ 中, 得 $C=\frac{1}{2}$.
+
+则 $yy'=\frac{1}{2}$, 也就是 $(y^2)'=1$, 从而 $y^2=x+C_1$. 将 $x=0, y=1$ 代入, 得 $C_1=1$.
+
+从而 $y^2=x+1$, 化简得 $y=\sqrt{x+1}$ 
+
+(因 $y(0)=1$, 故 $y=-\sqrt{x+1}$ 不合题意, 舍去）
+
+---
+
+<span className={style1.ZHAOKAIFENGurl}>更高质量的考研数学精讲请访问「荒原之梦考研数学」 Ultra 版：www.zhaokaifeng.com</span>
+
+---
+
+## 41
+
+**题目**
+
+二阶常系数非齐次线性方程 $y ^ { \prime \prime } - 2 y ^ { \prime } + 5 y = \mathrm { e } ^ { x } \cos ^ { 2 } x$ 的特解形式可设为$y ^ { * } ( x ) =$ 
+
+**知识点**
+
+- 二阶常系数非齐次微分方程
+
+**答案**
+
+$A x \mathrm { e } ^ { x } \cos 2 x + B x \mathrm { e } ^ { x } \sin 2 x + C \mathrm { e } ^ { x } $, 其中 $A , B , C$ 为待求常数
+
+**解析**
+由已知，得：
+
+$$y ^ { \prime \prime } - 2 y ^ { \prime } + 5 y = \mathrm { e } ^ { x } \cos ^ { 2 } x = \frac { 1 } { 2 } \mathrm { e } ^ { x } \cos 2 x + \frac { 1 } { 2 } \mathrm { e } ^ { x } = f _ { 1 } ( x ) + f _ { 2 } ( x )$$
+
+其中 $f _ { 1 } ( x ) = \frac { 1 } { 2 } \mathrm { e } ^ { x } \cos 2 x , f _ { 2 } ( x ) = \frac { 1 } { 2 } \mathrm { e } ^ { x } $.
+
+因对应齐次方程的特征方程为 $r ^ { 2 } - 2 r + 5 = 0 $, 特征根为 $r = 1 \pm 2 i $, 故：
+
+ $y ^ { \prime \prime } - 2 y ^ { \prime } + 5 y = f _ { 1 } ( x )$ 的特解形式可设为 $y _ { i } ^ { * } = x \mathrm { e } ^ { x } ( A \cos 2 x + B \sin 2 x ) $; 
+ $y ^ { \prime \prime } - 2 y ^ { \prime } + 5 y = f _ { 2 } ( x )$ 的特解形式可设为 $y _ { 2 } ^ { * } = C \mathrm { e } ^ { x } $. 
+
+由解的登加性质知：
+$$y ^ { * } ( x ) = y _ { i } ^ { * } + y _ { 2 } ^ { * } = A x \mathrm { e } ^ { x } \cos 2 x + B x \mathrm { e } ^ { x } \sin 2 x + C \mathrm { e } ^ { x } ,$$ 
+
+其中 $A , B , C$ 为待求常数
+
+
+---
+
+## 42
+
+**题目**
+
+设 $y = e^{x}\left(c_{1}\sin x + c_{2}\cos x\right)$, （$c_{1},c_{2}$ 为⁢⁢⁢任⁢⁢⁢意⁢⁢⁢常⁢⁢⁢数）为某二阶常系数线性齐次微分方程的通解，则该方程为
+
+**知识点**
+
+- 二阶常系数齐次微分方程
+
+**答案**
+
+$y ^ { \prime \prime } - 2 y ^ { \prime } + 2 y = 0$
+
+**解析**
+若 $y = \mathrm { e } ^ { x } \left( c _ { 1 } \sin x + c _ { 2 } \cos x \right)$ 为某二阶常系数线性齐次微分方程的通解， 则 $r _ { 1 . 2 } = 1 \pm i$ 为特征方程的2个根，从而特征方程为 $( \lambda - 1 ) ^ { 2 } = i ^ { 2 } $, 即 $\lambda ^ { 2 } - 2 \lambda + 1 = - 1 $, 整理得 $\lambda ^ { 2 } - 2 \lambda + 2 = 0 $, 故该方程为 $y ^ { \prime \prime } - 2 y ^ { \prime } + 2 y = 0 $. 
+
+
+---
+
+## 43
+
+**题目**
+
+若二阶常系数线性齐次微分方程 $y ^ { \prime \prime } + a y ^ { \prime } + b y = 0$ 的通解为 $y = \left( C _ { 1 } + C _ { 2 } x \right) \mathrm { e } ^ { x } ,$ 
+则非齐次方程 $y ^ { \prime \prime } + a y ^ { \prime } + b y = x$ 满足条件 $y ( 0 ) = 2 , y ^ { \prime } ( 0 ) = 0$ 的解为 $y = ?$ 
+
+**知识点**
+
+- 二阶常系数齐次微分方程
+
+**答案**
+
+$y = - x \mathrm { e } ^ { x } + x + 2$
+
+**解析**
+
+由二阶常系数线性齐次微分方程解的结构知 $\mathrm { e } ^ { x } , x \mathrm { e } ^ { x }$ 为齐次方程的两个线性无关的解，故 $r _ { 1, 2 } = 1$ 是特征方程的根，从而特征方程为 $( r - 1 ) ^ { 2 } = 0 $, 即 $r ^ { 2 } - 2 r$ $+ 1 = 0 $, 从而 $a = - 2 , b = 1 $. 
+
+故非齐次方程为 $y ^ { \prime \prime } - 2 y ^ { \prime } + y = x $. 设非齐次的特解为 $y ^ { * } = A x + B $, 将其代人 $y ^ { \prime \prime } - 2 y ^ { \prime } + y = x$ 中，得 $- 2 A + A x + B = x $, 则 $A = 1 , B = 2 $. 故 $y ^ { * } = x + 2 $, 从而非齐次方程 $y ^ { \prime \prime } - 2 y ^ { \prime } + y = x$ 的通解为 $y = \left( C _ { 1 } + C _ { 2 } x \right) \mathrm { e } ^ { x } + x + 2 .$
+
+由 $y ( 0 ) = 2 , y ^ { \prime } ( 0 ) = 0 $, 知 $\left\{ \begin{array} { l } C _ { 1 } + 2 = 2 , \\ C _ { 2 } + 1 = 0 , \end{array} \right.$ 得 $\left\{ \begin{array} { l } C _ { 1 } = 0 , \\ C _ { 2 } = - 1 . \end{array} \right.$ 
+
+从而满足条件的解为 $y = - x \mathrm { e } ^ { x } + x + 2 $. 
+
+
+---
+
+## 44
+
+**题目**
+
+二阶常系数非齐次线性微分方程 $y ^ { \prime \prime } - 4 y ^ { \prime } + 3 y = 2 \mathrm { e } ^ { 2 x }$ 的通解为 $y =$ 
+
+**知识点**
+
+- 二阶常系数非齐次微分方程
+
+**答案**
+
+$C _ { 1 } \mathrm { e } ^ { x } + C _ { 2 } \mathrm { e } ^ { 3 x } - 2 \mathrm { e } ^ { 2 x } $, 其中 $C _ { 1 } , C _ { 2 }$ 为任意常数
+
+**解析**
+原方程所对应的齐次方程的特征方程为 $r ^ { 2 } - 4 r + 3 = 0 $, 故 $r _ { 1 } = 1 , r _ { 2 } = 3 $. 从而齐次方程的通解为 $\tilde { y } = C _ { 1 } \mathrm { e } ^ { x } + C _ { 2 } \mathrm { e } ^ { 3 x } $.
+
+设非齐次方程的特解为 $y ^ { * } = A \mathrm { e } ^ { 2 x } $, 代入 $y ^ { \prime \prime } - 4 y ^ { \prime } + 3 y = 2 \mathrm { e } ^ { 2 x }$ 中，有
+
+$$4 A \mathrm { e } ^ { 2 x } - 8 A \mathrm { e } ^ { 2 x } + 3 A \mathrm { e } ^ { 2 x } = 2 \mathrm { e } ^ { 2 x } ,$$ 
+故 $- A = 2 $, 得 $A = - 2 $, 则 $y ^ { * } = - 2 \mathrm { e } ^ { 2 x } $. 从而方程 $y ^ { \prime \prime } - 4 y ^ { \prime } + 3 y = 2 \mathrm { e } ^ { 2 x }$ 的通解为
+ $y = \tilde { y } + y ^ { * } = C _ { 1 } \mathrm { e } ^ { x } + C _ { 2 } \mathrm { e } ^ { 3 x } - 2 \mathrm { e } ^ { 2 x } $, 其中 $C _ { 1 } , C _ { 2 }$ 为任意常数. 
+
+
+---
+
+## 45
+
+**题目**
+
+若函数 $f ( x )$ 满足方程 $f ^ { \prime \prime } ( x ) + f ^ { \prime } ( x ) - 2 f ( x ) = 0$ 及 $f ^ { \prime \prime } ( x ) + f ( x ) = 2 \mathrm { e } ^ { x } $, $f ( x ) = ?$ 
+
+**知识点**
+
+- 二阶常系数齐次微分方程
+
+**答案**
+
+$\mathrm { e } ^ { x }$
+
+**解析**
+二阶常系数齐次方程 $f ^ { \prime \prime } ( x ) + f ^ { \prime } ( x ) - 2 f ( x ) = 0$ 的特征方程为 $r^{2} + r - 2 = 0$, 解之得特征根为： $r _ { 1 } = 1 , r _ { 2 } = - 2 $.
+
+从而 $f ^ { \prime \prime } ( x ) + f ^ { \prime } ( x ) - 2 f ( x ) = 0$ 的通解为： $f ( x ) = C _ { 1 } \mathrm { e } ^ { x } + C _ { 2 } \mathrm { e } ^ { - 2 x } $. 
+
+又因为 $f ( x )$ 满足 $f ^ { \prime \prime } ( x ) + f ( x ) = 2 \mathrm { e } ^ { x } $, 故：
+$$\left( C _ { 1 } \mathrm { e } ^ { x } + C _ { 2 } \mathrm { e } ^ { - 2 x } \right) ^ { \prime \prime } + C _ { 1 } \mathrm { e } ^ { x } + C _ { 2 } \mathrm { e } ^ { - 2 x } = 2 \mathrm { e } ^ { x } ,$$ 
+整理有 $2 C _ { 1 } \mathrm { e } ^ { x } + 5 C _ { 2 } \mathrm { e } ^ { - 2 x } = 2 \mathrm { e } ^ { x } $, 解得 $C _ { 1 } = 1 , C _ { 2 } = 0 $,  
+
+综上可知，$f ( x ) = \mathrm { e } ^ { x } $. 
+
+---
+
+<span className={style1.ZHAOKAIFENGurl}>更高质量的考研数学精讲请访问「荒原之梦考研数学」 Ultra 版：www.zhaokaifeng.com</span>
+
+---
+
+
